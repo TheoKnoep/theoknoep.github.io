@@ -6,6 +6,26 @@
   grid-template-rows: 200px 800px; 
 }
 
+header h1 {
+  font-size: 3em; 
+  text-transform: uppercase;
+}
+header .prenom {
+  color: #feca07; 
+}
+header .nom {
+  font-weight: lighter; 
+}
+
+header h2 {
+  margin-top: 6px; 
+  font-weight: normal;
+}
+
+.deco-line {
+  height: 2px; width: 68px; background: #feca07; margin-top: 2px; 
+}
+
 .colore {background: #feca07; }
 
 .item1 {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
