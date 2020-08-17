@@ -6,7 +6,7 @@
   grid-template-rows: 200px 800px; 
 }
 
-.colore {background: #ffe000; }
+.colore {background: #feca07; }
 
 .item1 {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
 .item2 {grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3 ;}
@@ -14,7 +14,8 @@
 .item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
 
 .pp {
-  width: 140px; height: 140px; background-color: gray; border-radius: 100%; overflow: hidden; 
+  width: 140px; height: 140px; background-color: gray; border-radius: 100%; overflow: hidden;
+  box-shadow: 8px 4px 20px RGBA(0,0,0,0.15); border: #d9af13 solid 4px; 
 }
 
 .pp img {
@@ -58,7 +59,7 @@
 .item3 {grid-column-start: 1; grid-column-end: 3; grid-row-start: 4; grid-row-end: 5 ; }
 .item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
   
-  .item1 {background: #ffe000; }
+  .item1 {background: #feca07; }
   .item1 h1, .item1 h2 {
     position: relative; left: -20%; 
   }
