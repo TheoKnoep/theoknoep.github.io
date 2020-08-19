@@ -1,30 +1,37 @@
-/* Feuille de style CV web, projet 2 parcours dé eloppeur web OpenClassrooms */ 
+/* 
+Feuille de style CV web, projet 2 parcours développeur web OpenClassrooms 
+*/ 
 
-* { margin: 0; padding: 0; font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif; }
+* { margin: 0; padding: 0; 
+  font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif; }
 
 .container {
   display: grid; 
   grid-template-columns: 33% auto; 
 }
 
-header h1 {
-  font-size: 3em; 
+.item1 .prenom, .item1 .nom {
+  font-size: 1.8em; 
   text-transform: uppercase;
 }
-header .prenom {
+.item1 .prenom {
   color: #feca07; 
 }
-header .nom {
+.item1 .nom {
   font-weight: lighter; 
 }
 
-header h2 {
+.item1 .titre {
   margin-top: 6px; 
+  font-size-adjust: 1em; 
   font-weight: normal;
 }
 
 .deco-line {
-  height: 2px; width: 68px; background: #feca07; margin-top: 2px; 
+  height: 2px; 
+  width: 68px; 
+  background: #feca07; 
+  margin-top: 2px; 
 }
 
 .colore {background: #feca07; }
@@ -35,12 +42,18 @@ header h2 {
 .item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
 
 .pp {
-  width: 140px; height: 140px; background-color: gray; border-radius: 100%; overflow: hidden;
-  box-shadow: 8px 4px 20px RGBA(0,0,0,0.15); border: #d9af13 solid 4px; 
+  width: 140px; 
+  height: 140px; 
+  background-color: gray; 
+  border: #d9af13 solid 4px; 
+  border-radius: 100%; 
+  overflow: hidden;
+  box-shadow: 8px 4px 20px RGBA(0,0,0,0.15); 
 }
 
 .pp img {
-  width: 100%; height: auto; 
+  width: 100%; 
+  height: auto; 
 }
 
 .item {
@@ -73,20 +86,39 @@ header h2 {
 @media (max-width: 580px) {
 .container { 
       grid-template-columns: 1fr 2fr; 
-      grid-template-rows: auto auto auto; 
   }
+
 .item1 {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
 .item2 {grid-column-start: 1; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3 ;}
 .item3 {grid-column-start: 1; grid-column-end: 3; grid-row-start: 4; grid-row-end: 5 ; }
 .item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
-  
-  .item1 {background: #feca07; }
-  .item1 h1, .item1 h2 {
-    position: relative; left: -20%; 
-  }
-  .item1 h1 .prenom {color: #fff}
 
-  .pp {width: 120px; height: 120px; }
+
+  .item1 {
+    background: #feca07; 
+  }
+
+  .item1, .item4 {
+    padding: 1em 0; 
+  }
+
+  .item1 .prenom, .item1 .nom {
+    font-size: 1.2em; 
+  }
+
+  .item1 .prenom {
+    color: #fff
+  }
+  .item1 .titre {
+    font-size: 0.6em; 
+    line-height: 1; 
+  }
+  .pp {
+    width: 100px; 
+    height: 100px; 
+  }
+
+
 }
 
 
