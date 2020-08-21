@@ -1,24 +1,82 @@
 /* 
 Feuille de style CV web, projet 2 parcours développeur web OpenClassrooms 
+
+ToC : 
+  - Layout 
+  - Header
+  - Main content
+
+
 */ 
 
+
+
+/* Import des polices : */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+
+/* COULEUR PRINCIPALE ------------------------ */
+.bg-colore {
+  background: #00ACC1; 
+}
+.font-colore {
+  color: #00ACC1; 
+}
+
+
+
+
+
+
+
+/*
+LAYOUT ================================================
+*/
 * { margin: 0; padding: 0; 
-  font-family: 'Gill Sans MT', 'Trebuchet MS', sans-serif; }
+  font-family: 'Lato', 'Trebuchet MS', sans-serif; }
 
 .container {
   display: grid; 
   grid-template-columns: 33% auto; 
 }
 
+
+
+
+
+
+/* 
+                             CONFIGURATION DE LA GRILLE 
+                            -------------------------------
+*/ 
+.item1 {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
+.main-content {grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3 ;}
+.side-content {grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; grid-row-end: 3 ; }
+.item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
+
+
+
+
+
+
+
+
+
+
+
+/* 
+HEADER =============================================
+*/
+
 .item1 .prenom, .item1 .nom {
   font-size: 1.8em; 
   text-transform: uppercase;
 }
-.item1 .prenom {
-  color: #feca07; 
-}
+
 .item1 .nom {
-  font-weight: lighter; 
+  font-weight: 300;
 }
 
 .item1 .titre {
@@ -30,11 +88,8 @@ Feuille de style CV web, projet 2 parcours développeur web OpenClassrooms
 .deco-line {
   height: 2px; 
   width: 68px; 
-  background: #feca07; 
   margin-top: 2px; 
 }
-
-.colore {background: #feca07; }
 
 
 
@@ -44,31 +99,55 @@ Feuille de style CV web, projet 2 parcours développeur web OpenClassrooms
 
 
 /* 
-CONFIGURATION DE LA GRILLE 
-=========================
-*/ 
-.item1 {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
-.main-content {grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3 ;}
-.side-content {grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; grid-row-end: 3 ; }
-.item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
+MAIN CONTENT ===========================================
+*/
+
+.main-content p {
+  max-width: 720px; 
+}
 
 
 
 
 
-/* LOISIRS ============================================ */
+
+
+
+/* 
+SIDE CONTENT ==============================================
+*/
+
+/* Contact -------------------------- */
+.side-content li {
+  list-style-type: none; ;
+}
+
+
+
+/* A propos ------------------------- */ 
+
+.a-propos p {
+  text-align: justify; 
+  text-indent: 1.6em; 
+}
+
+
+
+
+/* Loisirs  --------------------------- */
 
 .loisirs .ico-container {
   display: flex; 
-  justify-content: space-around; 
+  justify-content: space-between; 
   width: 80%; 
   margin: auto; 
 }
 
 .loisirs .single-ico-container {
-  width: 52px; 
-  height: 52px; 
-  border-radius: 50%; 
+  width: 46px; 
+  height: 46px; 
+  border-radius: 50%;
+  box-shadow: 4px 2px 8px rgba(0,0,0,0.2); 
   overflow: hidden; 
 }
 
@@ -80,12 +159,25 @@ CONFIGURATION DE LA GRILLE
 
 
 
-/* Bloc de la photo de profil ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/ 
+
+
+
+
+
+
+
+
+
+
+/* 
+Bloc de la photo de profil ======================================
+*/ 
+
 .pp {
   width: 140px; 
   height: 140px; 
   background-color: gray; 
-  border: #d9af13 solid 4px; 
+  border: #00838F solid 4px; 
   border-radius: 100%; 
   overflow: hidden;
   box-shadow: 8px 4px 20px RGBA(0,0,0,0.15); 
@@ -123,7 +215,7 @@ CONFIGURATION DE LA GRILLE
 
 
 
-@media (max-width: 580px) {
+@media (max-width: 680px) {
 .container { 
       grid-template-columns: 1fr 2fr; 
   }
@@ -135,7 +227,7 @@ CONFIGURATION DE LA GRILLE
 
 
   .item1 {
-    background: #feca07; 
+    background: #00ACC1; 
   }
 
   .item1, .item4 {
@@ -157,6 +249,28 @@ CONFIGURATION DE LA GRILLE
     width: 100px; 
     height: 100px; 
   }
+
+
+
+
+  /* side-content pour le mobile */
+      .side-content {
+        display: flex; 
+        flex-direction: column; 
+      }
+        .side-content :nth-child(1) {
+          order: 2; 
+        }
+        .side-content :nth-child(2) {
+          order: 1; 
+        }
+        .side-content :nth-child(3) {
+          order: 3; 
+        }
+
+      .ico-container {
+        max-width: 340px; 
+      }
 
 
 }
