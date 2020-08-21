@@ -34,8 +34,10 @@ ToC :
 /*
 LAYOUT ================================================
 */
-* { margin: 0; padding: 0; 
-  font-family: 'Lato', 'Trebuchet MS', sans-serif; }
+* { 
+  margin: 0; padding: 0; 
+  font-family: 'Lato', 'Trebuchet MS', sans-serif; 
+}
 
 .container {
   display: grid; 
@@ -68,6 +70,10 @@ GLOBAL =========================================
 */
 h2 {
   text-transform: uppercase; ;
+}
+
+p {
+  line-height: 1.6;
 }
 
 
@@ -123,9 +129,11 @@ MAIN CONTENT ===========================================
 
 .main-content .formation article, .main-content .experience article { 
    display: flex; 
+   margin: 1.4em 0; 
 }
 .main-content > section > article > .dot {
   flex-basis: 35px; 
+  text-align: center; 
 }
 .main-content > section > article > .left-block {
   flex-basis: 240px; ;
@@ -175,7 +183,7 @@ SIDE CONTENT ==============================================
 
 .a-propos p {
   text-align: justify; 
-  text-indent: 1.6em; 
+  margin: 1em 0; 
   padding: 0 1em; 
 }
 
