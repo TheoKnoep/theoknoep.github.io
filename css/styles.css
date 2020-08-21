@@ -165,6 +165,11 @@ MAIN CONTENT ===========================================
 SIDE CONTENT ==============================================
 */
 
+.side-content {
+  display: flex; 
+  flex-direction: column;
+}
+
 
 .side-content h2 {
   text-align: center; 
@@ -193,14 +198,14 @@ SIDE CONTENT ==============================================
 /* Loisirs  --------------------------- */
 
 .loisirs {
-  align-self: flex-end; 
+  margin-top: auto; 
 }
 
 .loisirs .ico-container {
   display: flex; 
   justify-content: space-between; 
-  width: 80%; 
-  margin: auto; 
+  width: 60%; 
+  margin: 2em auto; 
 }
 
 .loisirs .single-ico-container {
