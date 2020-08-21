@@ -124,6 +124,9 @@ MAIN CONTENT ===========================================
 .main-content .formation article, .main-content .experience article { 
    display: flex; 
 }
+.main-content > section > article > .dot {
+  flex-basis: 35px; 
+}
 .main-content > section > article > .left-block {
   flex-basis: 240px; ;
 }
@@ -306,9 +309,19 @@ Bloc de la photo de profil ======================================
 
   /* MAIN MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+  .main-content .left-block {
+    font-size: 0.8em; 
+  }
+
+  .main-content p {
+    font-size: 0.9em; 
+  }
+
   .main-content .recommandations .reco-container article {
     flex-grow: 1; 
   }
+
+
 
 
 
