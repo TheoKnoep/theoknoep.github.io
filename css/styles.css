@@ -76,6 +76,11 @@ p {
   line-height: 1.6;
 }
 
+a {
+  text-decoration: none; 
+  color: #005e67; 
+  border-bottom: dotted 1px #005e67; 
+}
 
 
 
