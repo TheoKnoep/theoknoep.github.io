@@ -42,6 +42,10 @@ LAYOUT ================================================
   grid-template-columns: 33% auto; 
 }
 
+.header-content, .main-content {
+  padding: 1.2em; 
+}
+
 
 
 
@@ -51,7 +55,7 @@ LAYOUT ================================================
                              CONFIGURATION DE LA GRILLE 
                             -------------------------------
 */ 
-.item1 {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
+.header-content {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
 .main-content {grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3 ;}
 .side-content {grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; grid-row-end: 3 ; }
 .item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
@@ -59,7 +63,12 @@ LAYOUT ================================================
 
 
 
-
+/* 
+GLOBAL =========================================
+*/
+h2 {
+  text-transform: uppercase; ;
+}
 
 
 
@@ -70,19 +79,19 @@ LAYOUT ================================================
 HEADER =============================================
 */
 
-.item1 .prenom, .item1 .nom {
+.header-content .prenom, .header-content .nom {
   font-size: 1.8em; 
   text-transform: uppercase;
 }
 
-.item1 .nom {
+.header-content .nom {
   font-weight: 300;
 }
 
-.item1 .titre {
+.header-content .titre {
   margin-top: 6px; 
-  font-size-adjust: 1em; 
-  font-weight: normal;
+  font-size: 0.8em; 
+  font-weight: 400; 
 }
 
 .deco-line {
@@ -102,6 +111,10 @@ HEADER =============================================
 MAIN CONTENT ===========================================
 */
 
+.main-content h2 {
+  border-bottom: 1px solid #00ACC1; 
+}
+
 .main-content p {
   max-width: 720px; 
 }
@@ -117,9 +130,16 @@ MAIN CONTENT ===========================================
 SIDE CONTENT ==============================================
 */
 
+
+.side-content h2 {
+  text-align: center; 
+  background-color: rgba(0,0,0,0.9); 
+}
+
 /* Contact -------------------------- */
 .side-content li {
-  list-style-type: none; ;
+  list-style-type: none; 
+  padding: 1em; 
 }
 
 
@@ -129,12 +149,17 @@ SIDE CONTENT ==============================================
 .a-propos p {
   text-align: justify; 
   text-indent: 1.6em; 
+  padding: 0 1em; 
 }
 
 
 
 
 /* Loisirs  --------------------------- */
+
+.loisirs {
+  align-self: flex-end; 
+}
 
 .loisirs .ico-container {
   display: flex; 
@@ -176,6 +201,7 @@ Bloc de la photo de profil ======================================
 .pp {
   width: 140px; 
   height: 140px; 
+  margin: 1em; 
   background-color: gray; 
   border: #00838F solid 4px; 
   border-radius: 100%; 
@@ -188,11 +214,7 @@ Bloc de la photo de profil ======================================
   height: auto; 
 }
 
-.item {
-  padding: 1.2em; 
-}
-
-.item1 {
+.header-content {
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
@@ -220,28 +242,28 @@ Bloc de la photo de profil ======================================
       grid-template-columns: 1fr 2fr; 
   }
 
-.item1 {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
+.header-content {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
 .main-content {grid-column-start: 1; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3 ;}
 .side-content {grid-column-start: 1; grid-column-end: 3; grid-row-start: 4; grid-row-end: 5 ; }
 .item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
 
 
-  .item1 {
+  .header-content {
     background: #00ACC1; 
   }
 
-  .item1, .item4 {
+  .header-content, .item4 {
     padding: 1em 0; 
   }
 
-  .item1 .prenom, .item1 .nom {
+  .header-content .prenom, .header-content .nom {
     font-size: 1.2em; 
   }
 
-  .item1 .prenom {
+  .header-content .prenom {
     color: #fff
   }
-  .item1 .titre {
+  .header-content .titre {
     font-size: 0.6em; 
     line-height: 1; 
   }
