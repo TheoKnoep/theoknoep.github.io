@@ -82,6 +82,15 @@ a {
   border-bottom: dotted 1px #005e67; 
 }
 
+a:visited 
+a:focus
+a:active 
+
+::selection {
+  background-color: #00838F; 
+  color: white; 
+}
+
 
 
 
