@@ -128,13 +128,16 @@ MAIN CONTENT ===========================================
   flex-basis: 240px; ;
 }
 
-
-.main-content .recommandations .reco-container {
-    display: flex; 
+@media (min-width: 440px) {
+    .main-content .recommandations .reco-container {
+        display: flex; 
+    }
 }
+
 .main-content .recommandations .reco-container article {
   flex-grow: 1; 
 }
+
 
 .main-content p {
   max-width: 720px; 
@@ -259,6 +262,9 @@ Bloc de la photo de profil ======================================
 
 
 @media (max-width: 680px) {
+
+
+/* GRILLE MOBILE  ~~~~~~~~~~~~~~~~~~~~~~~~~~  */
 .container { 
       grid-template-columns: 1fr 2fr; 
   }
@@ -269,6 +275,10 @@ Bloc de la photo de profil ======================================
 .item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
 
 
+
+
+
+/* HEADER MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
   .header-content {
     background: #00ACC1; 
   }
@@ -288,15 +298,25 @@ Bloc de la photo de profil ======================================
     font-size: 0.6em; 
     line-height: 1; 
   }
-  .pp {
-    width: 100px; 
-    height: 100px; 
+
+
+
+
+
+
+  /* MAIN MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  .main-content .recommandations .reco-container article {
+    flex-grow: 1; 
   }
 
 
 
 
-  /* side-content pour le mobile */
+
+
+
+  /* SIDE MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
       .side-content {
         display: flex; 
         flex-direction: column; 
@@ -315,6 +335,14 @@ Bloc de la photo de profil ======================================
         max-width: 340px; 
       }
 
+
+
+
+ /* PP MOBILE ~~~~~~~~~~~~~~~~~~~~~~ */
+ .pp {
+  width: 100px; 
+  height: 100px; 
+}
 
 }
 
