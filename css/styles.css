@@ -121,6 +121,13 @@ MAIN CONTENT ===========================================
   margin-right: 25px; 
 }
 
+.main-content > section > article { border: 2px solid red; 
+  display: flex; 
+}
+.main-content > section > article :nth-child(1) {
+  flex-basis: 240px; ;
+}
+
 .main-content p {
   max-width: 720px; 
 }
