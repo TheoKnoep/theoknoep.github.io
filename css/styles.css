@@ -121,10 +121,10 @@ MAIN CONTENT ===========================================
   margin-right: 25px; 
 }
 
-.main-content > section > article { border: 2px solid red; 
-  display: flex; 
+.main-content .formation article, .main-content .experience article { 
+   display: flex; 
 }
-.main-content > section > article :nth-child(1) {
+.main-content > section > article > .left-block {
   flex-basis: 240px; ;
 }
 
