@@ -80,7 +80,6 @@ a {
   text-decoration: none;
   color: #005e67; 
   border-bottom: dotted 1px #005e67; 
-  display: inline-block; 
   line-height: 1.25; 
 }
 a:hover {
@@ -236,6 +235,15 @@ SIDE CONTENT ==============================================
   border-radius: 50%;
   box-shadow: 4px 2px 8px rgba(0,0,0,0.2); 
   overflow: hidden; 
+}
+
+.loisirs .single-ico-container a {
+  text-decoration: none; 
+  font-size: 38px; 
+  text-align: center; 
+  display: inline-block; 
+  width: 100%; 
+  border: none; 
 }
 
 .loisirs .single-ico-container img {
