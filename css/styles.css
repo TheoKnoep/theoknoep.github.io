@@ -81,10 +81,9 @@ a {
   color: #005e67; 
   border-bottom: dotted 1px #005e67; 
 }
-
-a:visited 
-a:focus
-a:active 
+a:hover {
+  border-bottom: solid 1px #005e67; 
+}
 
 ::selection {
   background-color: #00838F; 
