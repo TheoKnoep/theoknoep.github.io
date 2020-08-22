@@ -77,21 +77,13 @@ p {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #005e67; 
   border-bottom: dotted 1px #005e67; 
   display: inline-block; 
 }
-a::after {
-  content: ''; 
-  display: block; 
-  width: 0; 
-  height: 2px; 
-  background: #000; 
-  transition: width 300ms; 
-}
-a:hover::after {
-  width: 100%; 
+a:hover {
+  border-bottom: solid 1px #005e67; 
 }
 
 ::selection {
