@@ -135,11 +135,11 @@ MAIN CONTENT ===========================================
 .main-content h2 {
   border-bottom: 1px solid #00ACC1; 
   margin: 0.6em 0; 
-  padding: 0.45em; 
+  padding: 0.45em 0; 
   display: flex; 
 }
-.main-content h2 span {
-  margin-right: 25px; 
+.main-content h2 :nth-child(1) {
+  flex-basis:48px; 
 }
 
 .main-content .formation article, .main-content .experience article { 
