@@ -45,7 +45,7 @@ LAYOUT ================================================
 }
 
 .header-content, .main-content {
-  padding: 1.2em; 
+  padding: 0 1.6em; 
 }
 
 
@@ -134,7 +134,7 @@ MAIN CONTENT ===========================================
 
 .main-content h2 {
   border-bottom: 1px solid #00ACC1; 
-  margin: 0.6em 0; 
+  margin: 0 0 0.6em 0; 
   padding: 0.45em 0; 
   display: flex; 
 }
