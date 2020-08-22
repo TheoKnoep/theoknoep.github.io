@@ -365,6 +365,10 @@ Bloc de la photo de profil ======================================
     font-size: 1.2em; 
   }
 
+  .main-content .formation article, .main-content .experience article {
+    flex-wrap: wrap; 
+  }
+
   .main-content .left-block {
     font-size: 0.8em; 
   }
