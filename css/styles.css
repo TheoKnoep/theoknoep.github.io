@@ -343,7 +343,7 @@ Bloc de la photo de profil ======================================
   }
 
   .header-content .prenom, .header-content .nom {
-    font-size: 1.2em; 
+    font-size: 0.8em; 
   }
 
   .header-content .prenom {
@@ -360,6 +360,10 @@ Bloc de la photo de profil ======================================
 
 
   /* MAIN MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  .main-content h2 {
+    font-size: 1.2em; 
+  }
 
   .main-content .left-block {
     font-size: 0.8em; 
