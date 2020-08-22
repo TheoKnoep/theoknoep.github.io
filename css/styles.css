@@ -185,26 +185,33 @@ SIDE CONTENT ==============================================
   flex-direction: column;
 }
 
+.side-content section {
+  margin-bottom: 2em; 
+}
 
 .side-content h2 {
   text-align: center; 
   background-color: rgba(0,0,0,0.9); 
+  padding: 6px 0; 
+}
+
+.side-content p, .side-content ul {
+  max-width: 280px; 
+  margin: auto; 
+  padding: 0 1em; 
 }
 
 /* Contact -------------------------- */
 .side-content li {
   list-style-type: none; 
-  padding: 1em; 
+  padding: 1em 0; 
 }
 
 
-
 /* A propos ------------------------- */ 
-
 .a-propos p {
   text-align: justify; 
-  margin: 1em 0; 
-  padding: 0 1em; 
+  margin: 1em auto; 
 }
 
 
@@ -219,13 +226,13 @@ SIDE CONTENT ==============================================
 .loisirs .ico-container {
   display: flex; 
   justify-content: space-between; 
-  width: 60%; 
+  width: 68%; 
   margin: 2em auto; 
 }
 
 .loisirs .single-ico-container {
-  width: 46px; 
-  height: 46px; 
+  width: 52px; 
+  height: 52px; 
   border-radius: 50%;
   box-shadow: 4px 2px 8px rgba(0,0,0,0.2); 
   overflow: hidden; 
@@ -254,9 +261,9 @@ Bloc de la photo de profil ======================================
 */ 
 
 .pp {
-  width: 140px; 
-  height: 140px; 
-  margin: 1em; 
+  width: 200px; 
+  height: 200px; 
+  margin: 4em 0; 
   background-color: gray; 
   border: #00838F solid 4px; 
   border-radius: 100%; 
@@ -291,6 +298,15 @@ Bloc de la photo de profil ======================================
 
 
 
+
+
+
+
+/*
+===============================================================================================
+                                                            MOBILE : breapoint à 680px 
+===============================================================================================
+*/ 
 
 @media (max-width: 680px) {
 
@@ -362,13 +378,13 @@ Bloc de la photo de profil ======================================
         display: flex; 
         flex-direction: column; 
       }
-        .side-content :nth-child(1) {
+        .side-content > :nth-child(1) {
           order: 2; 
         }
-        .side-content :nth-child(2) {
+        .side-content > :nth-child(2) {
           order: 1; 
         }
-        .side-content :nth-child(3) {
+        .side-content > :nth-child(3) {
           order: 3; 
         }
 
@@ -383,6 +399,7 @@ Bloc de la photo de profil ======================================
  .pp {
   width: 100px; 
   height: 100px; 
+  margin: 1em 0; 
 }
 
 }
