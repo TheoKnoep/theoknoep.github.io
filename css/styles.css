@@ -362,8 +362,13 @@ Bloc de la photo de profil ======================================
     padding: 1em 0; 
   }
 
+  .header-content h1 {
+    line-height: 0.6;
+  }
+
   .header-content .prenom, .header-content .nom {
     font-size: 0.8em; 
+    line-height: 1.4; 
   }
 
   .header-content .prenom {
@@ -371,7 +376,6 @@ Bloc de la photo de profil ======================================
   }
   .header-content .titre {
     font-size: 0.6em; 
-    line-height: 1; 
   }
 
 
