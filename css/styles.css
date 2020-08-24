@@ -191,7 +191,7 @@ MAIN CONTENT ===================================================================
   text-align: center; 
 }
 .main-content > section > article > .left-block {
-  flex-basis: 240px; ;
+  flex-basis: 240px; 
 }
 
 .main-content .reco-container {
@@ -251,7 +251,7 @@ SIDE CONTENT ==============================================
 /* Contact -------------------------- */
 .side-content li {
   list-style-type: none; 
-  padding: 1em 0; 
+  padding: 0.6em 0; 
 }
 
 
