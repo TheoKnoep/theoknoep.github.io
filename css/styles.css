@@ -2,9 +2,7 @@
 Feuille de style CV web, projet 2 parcours développeur web OpenClassrooms 
 
 ToC : 
-  - Layout 
-  - Header
-  - Main content
+
 
 
 */ 
@@ -91,7 +89,25 @@ a:hover {
   color: white; 
 }
 
-
+.discret-link {
+  display: inline-block; 
+  border: none; 
+  font-weight: bold; 
+}
+.discret-link:hover {
+  border: none; 
+}
+.discret-link::after {
+  content: ''; 
+  display: block; 
+  background-color: #005e67; 
+  height: 2px; 
+  width: 0; 
+  transition: width ease 250ms; 
+}
+.discret-link:hover::after {
+  width: 100%; 
+}
 
 
 
