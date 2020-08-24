@@ -2,7 +2,15 @@
 Feuille de style CV web, projet 2 parcours développeur web OpenClassrooms 
 
 ToC : 
-
+- Import des polices 
+- Couleur principale
+- Layout/Grille
+- GLOBAL
+- Header
+- Main content
+- Side content
+- Bloc de la photo de profil
+- MOBILE @media (max-width: 680px) 
 
 
 */ 
@@ -47,14 +55,6 @@ LAYOUT ================================================
 }
 
 
-
-
-
-
-/* 
-CONFIGURATION DE LA GRILLE 
--------------------------------
-*/ 
 .header-content {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
 .main-content {grid-column-start: 2; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3 ;}
 .side-content {grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; grid-row-end: 3 ; }
@@ -111,6 +111,21 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 HEADER =============================================
 */
@@ -143,8 +158,14 @@ HEADER =============================================
 
 
 
+
+
+
+
+
+
 /* 
-MAIN CONTENT ===========================================
+MAIN CONTENT ======================================================================
 */
 
 .main-content {
@@ -173,20 +194,27 @@ MAIN CONTENT ===========================================
   flex-basis: 240px; ;
 }
 
-@media (min-width: 440px) {
-    .main-content .recommandations .reco-container {
-        display: flex; 
-    }
+.main-content .reco-container {
+  display: flex; 
+  flex-wrap: wrap; 
 }
 
-.main-content .recommandations .reco-container article {
+.main-content .reco-container article {
   flex-grow: 1; 
+  min-width: 230px; 
+  padding: 0 0.6em 0.6em 0.6em;
 }
 
 
 .main-content p {
-  max-width: 720px; 
+  max-width: 620px; 
 }
+
+
+
+
+
+
 
 
 
@@ -232,8 +260,6 @@ SIDE CONTENT ==============================================
   text-align: justify; 
   margin: 1em auto; 
 }
-
-
 
 
 /* Loisirs  --------------------------- */
@@ -284,6 +310,9 @@ SIDE CONTENT ==============================================
 
 
 
+
+
+
 /* 
 Bloc de la photo de profil ======================================
 */ 
@@ -314,6 +343,13 @@ Bloc de la photo de profil ======================================
   justify-content: center; 
   align-items: center; 
 }
+
+
+
+
+
+
+
 
 
 
@@ -401,9 +437,6 @@ Bloc de la photo de profil ======================================
     font-size: 0.9em; 
   }
 
-  .main-content .recommandations .reco-container article {
-    flex-grow: 1; 
-  }
 
 
 
