@@ -1,6 +1,5 @@
 /* **** Partie à supprimer */ 
 header, section, footer {
-	height: 200px; 
 	border: solid 2px violet; 
 }
 /* ---- Fin de la partie à supprimer */
@@ -62,6 +61,10 @@ GLOBAL -------------------------------------------------------------------------
 	font-family: 'Raleway', 'Trebuchet MS', sans-serif; 
 }
 
+a {
+	text-decoration: none; 
+}
+
 
 .page {
 	display: grid; 
@@ -93,3 +96,71 @@ GRID TEMPLATE
 		grid-row-end: 4; 
 	}
 } /* Fin de la media query */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+HEBERGEMENT ----------------------------------------------------------------------------
+*/
+
+.hebergement-content {
+	border-radius: 20px; 
+	background: #f2F2F2; 
+}
+
+.hebergement-content .hebergement-container {
+	display: flex; 
+}
+
+.hebergement-content .hebergement-item {
+	border-radius: 20px; 
+	background: white; 
+	border: 4px solid white; 
+	overflow: hidden; 
+	max-width: 360px; 
+	width: 30%; 
+	height: 180px; 
+	box-shadow: 1px 1px 24px rgba(0,0,0,0.2); 
+}
+.hebergement-content .image-container {
+	height: 110px; 
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.hebergement-content .hebergement-item img {
+	width: 100%; 
+	height: auto; 
+}
+
+.hebergement-content .hebergement-infos {
+	background: white; 
+	color: black; 
+	font-size: 0.85em; 
+	line-height: 0; ;
+}
+
+.hebergement-content .hebergement-infos .star-up {
+	color: #0065FC; 
+}
+
+.hebergement-content .hebergement-infos .star-down {
+	color: #E2E2E2; 
+}
