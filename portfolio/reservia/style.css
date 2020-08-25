@@ -116,11 +116,38 @@ GRID TEMPLATE
 /*
 HEADER -----------------------------------------------------------------
 */
+.header-content {
+	display: flex; 
+	justify-content: space-between;
+	margin: 2em 0; 
+}
+
+.header-content nav {
+	width: 40%; 
+}
+
 
 .header-content ul {
 	list-style: none; 
+	display: flex; 
+	justify-content: space-around;
+	height: 100%; 
+}
+.header-content ul li { 
+	margin: auto; 
+}
+.header-content ul li a {
+	padding: 1em; 
+}
+.header-content ul li a:hover {
+	color: #0065FC; 
+	border-top: solid 2px #0065FC; 
 }
 
+.header-content .inscription-link {
+	font-weight: 700; 
+	color: #0065FC; 
+}
 
 
 
