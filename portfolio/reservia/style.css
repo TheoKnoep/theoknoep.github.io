@@ -1,7 +1,67 @@
+/* **** Partie à supprimer */ 
 header, section, footer {
 	height: 200px; 
 	border: solid 2px violet; 
 }
+/* ---- Fin de la partie à supprimer */
+
+
+
+
+/* 
+Import de la police 
+*/ 
+@font-face {
+	font-family: 'Raleway';
+	src: url(font/Raleway-Regular.ttf); 
+	font-weight: 400; 
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url(font/Raleway-Italic.ttf); 
+	font-weight: 400; 
+	font-style: italic; 
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url(font/Raleway-Bold.ttf); 
+	font-weight: 700; 
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url(font/Raleway-BoldItalic.ttf); 
+	font-weight: 700; 
+	font-style: italic; 
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url(font/Raleway-Light.ttf); 
+	font-weight: 300; 
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url(font/Raleway-LightItalic.ttf); 
+	font-weight: 300; 
+	font-style: italic; 
+}
+
+
+
+
+
+
+
+
+/* 
+GLOBAL --------------------------------------------------------------------------------
+*/ 
+* {
+	font-family: 'Raleway', 'Trebuchet MS', sans-serif; 
+}
+
 
 .page {
 	display: grid; 
