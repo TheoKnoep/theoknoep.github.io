@@ -127,6 +127,7 @@ HEBERGEMENT --------------------------------------------------------------------
 
 .hebergement-content .hebergement-container {
 	display: flex; 
+	justify-content: space-between; 
 }
 
 .hebergement-content .hebergement-item {
