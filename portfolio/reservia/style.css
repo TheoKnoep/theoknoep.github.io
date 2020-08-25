@@ -70,8 +70,10 @@ a {
 
 .page {
 	display: grid; 
+	grid-template-columns: 65% 20px auto;
 	max-width: 1200px; 
 	margin: auto;
+	padding: 0 2%; 
 }
 
 
@@ -80,7 +82,13 @@ a {
 /* 
 GRID TEMPLATE 
 */
-@media (min-width: 768px) {
+
+.header-content, .searchbox-content, .activites-content, .footer-content, .populaire-content, .hebergement-content {
+	grid-column-start: 1; 
+	grid-column-end: 4; 
+}
+
+@media (min-width: 968px) {
 	.header-content, .searchbox-content, .activites-content, .footer-content {
 		grid-column-start: 1; 
 		grid-column-end: 4; 
@@ -91,7 +99,7 @@ GRID TEMPLATE
 	}
 	.hebergement-content {
 		grid-column-start: 1; 
-		grid-column-end: 3; 
+		grid-column-end: 2; 
 	}
 	.populaire-content, .hebergement-content {
 		grid-row-start: 3; 
@@ -101,6 +109,17 @@ GRID TEMPLATE
 
 
 
+
+
+
+
+/*
+HEADER -----------------------------------------------------------------
+*/
+
+.header-content ul {
+	list-style: none; 
+}
 
 
 
@@ -125,10 +144,12 @@ HEBERGEMENT --------------------------------------------------------------------
 .hebergement-content {
 	border-radius: 20px; 
 	background: #f2F2F2; 
+	padding: 2em; 
 }
 
 .hebergement-content .hebergement-container {
 	display: flex; 
+	flex-wrap: wrap; 
 	justify-content: space-between; 
 }
 
@@ -141,10 +162,10 @@ HEBERGEMENT --------------------------------------------------------------------
 	width: 30%; 
 	height: 180px; 
 	box-shadow: 1px 1px 24px rgba(0,0,0,0.2); 
+	margin: 1em 0; 
 }
 .hebergement-content .image-container {
 	height: 110px; 
-	width: 100%; 
 	overflow: hidden;
 	display: flex;
 	align-items: center;
