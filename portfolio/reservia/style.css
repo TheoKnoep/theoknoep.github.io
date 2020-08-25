@@ -1,0 +1,35 @@
+header, section, footer {
+	height: 200px; 
+	border: solid 2px violet; 
+}
+
+.page {
+	display: grid; 
+	max-width: 1200px; 
+	margin: auto;
+}
+
+
+
+
+/* 
+GRID TEMPLATE 
+*/
+@media (min-width: 768px) {
+	.header-content, .searchbox-content, .activites-content, .footer-content {
+		grid-column-start: 1; 
+		grid-column-end: 4; 
+	}
+	.populaire-content {
+		grid-column-start: 3; 
+		grid-column-end: 4; 
+	}
+	.hebergement-content {
+		grid-column-start: 1; 
+		grid-column-end: 3; 
+	}
+	.populaire-content, .hebergement-content {
+		grid-row-start: 3; 
+		grid-row-end: 4; 
+	}
+} /* Fin de la media query */ 
