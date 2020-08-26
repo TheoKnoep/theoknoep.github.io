@@ -1,5 +1,4 @@
-/* 
-Feuille de style CV web, projet 2 parcours développeur web OpenClassrooms 
+/* Feuille de style CV web, projet 2 parcours développeur web OpenClassrooms 
 
 ToC : 
 - Import des polices 
@@ -11,15 +10,7 @@ ToC :
 - Side content
 - Bloc de la photo de profil
 - MOBILE @media (max-width: 680px) 
-
-
 */ 
-
-
-
-/* Import des polices : */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
 
 
 
@@ -30,9 +21,6 @@ ToC :
 .font-colore {
   color: #00ACC1; 
 }
-
-
-
 
 
 
@@ -113,19 +101,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
 HEADER =============================================
 */
@@ -150,15 +125,6 @@ HEADER =============================================
   width: 68px; 
   margin-top: 2px; 
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -209,16 +175,6 @@ MAIN CONTENT ===================================================================
 .main-content p {
   max-width: 620px; 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -300,19 +256,6 @@ SIDE CONTENT ==============================================
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
 Bloc de la photo de profil ======================================
 */ 
@@ -338,31 +281,11 @@ Bloc de la photo de profil ======================================
   flex-direction: column; 
   justify-content: center; 
 }
-.item4 {
+.pp-content {
   display: flex; 
   justify-content: center; 
   align-items: center; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -372,108 +295,91 @@ Bloc de la photo de profil ======================================
 ===============================================================================================
 */ 
 
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
+  /* GRILLE MOBILE  ~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+    .container { 
+          grid-template-columns: 1fr 2fr; 
+      }
+
+    .header-content {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
+    .main-content {grid-column-start: 1; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3 ;}
+    .side-content {grid-column-start: 1; grid-column-end: 3; grid-row-start: 4; grid-row-end: 5 ; }
+    .pp-content {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
 
 
-/* GRILLE MOBILE  ~~~~~~~~~~~~~~~~~~~~~~~~~~  */
-.container { 
-      grid-template-columns: 1fr 2fr; 
-  }
+  /* HEADER MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
+    .header-content {
+      background: #00ACC1; 
+    }
 
-.header-content {grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; grid-row-end: 2 ; }
-.main-content {grid-column-start: 1; grid-column-end: 3; grid-row-start: 2; grid-row-end: 3 ;}
-.side-content {grid-column-start: 1; grid-column-end: 3; grid-row-start: 4; grid-row-end: 5 ; }
-.item4 {grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; grid-row-end: 2 ; }
+    .header-content, .item4 {
+      padding: 1em 0; 
+    }
 
+    .header-content h1 {
+      line-height: 0.6;
+    }
 
+    .header-content .prenom, .header-content .nom {
+      font-size: 0.8em; 
+      line-height: 1.4; 
+    }
 
-
-
-/* HEADER MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */ 
-  .header-content {
-    background: #00ACC1; 
-  }
-
-  .header-content, .item4 {
-    padding: 1em 0; 
-  }
-
-  .header-content h1 {
-    line-height: 0.6;
-  }
-
-  .header-content .prenom, .header-content .nom {
-    font-size: 0.8em; 
-    line-height: 1.4; 
-  }
-
-  .header-content .prenom {
-    color: #fff
-  }
-  .header-content .titre {
-    font-size: 0.6em; 
-  }
-
-
-
+    .header-content .prenom {
+      color: #fff
+    }
+    .header-content .titre {
+      font-size: 0.6em; 
+    }
 
 
 
   /* MAIN MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+    .main-content h2 {
+      font-size: 1.2em; 
+    }
 
-  .main-content h2 {
-    font-size: 1.2em; 
-  }
+    .main-content .formation article, .main-content .experience article {
+      flex-wrap: wrap; 
+    }
 
-  .main-content .formation article, .main-content .experience article {
-    flex-wrap: wrap; 
-  }
+    .main-content .left-block {
+      font-size: 0.8em; 
+    }
 
-  .main-content .left-block {
-    font-size: 0.8em; 
-  }
-
-  .main-content p {
-    font-size: 0.9em; 
-  }
-
-
-
-
-
-
-
+    .main-content p {
+      font-size: 0.9em; 
+    }
 
 
 
   /* SIDE MOBILE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-      .side-content {
-        display: flex; 
-        flex-direction: column; 
+    .side-content {
+      display: flex; 
+      flex-direction: column; 
+    }
+      .side-content > :nth-child(1) {
+        order: 2; 
       }
-        .side-content > :nth-child(1) {
-          order: 2; 
-        }
-        .side-content > :nth-child(2) {
-          order: 1; 
-        }
-        .side-content > :nth-child(3) {
-          order: 3; 
-        }
-
-      .ico-container {
-        max-width: 340px; 
+      .side-content > :nth-child(2) {
+        order: 1; 
+      }
+      .side-content > :nth-child(3) {
+        order: 3; 
       }
 
+    .ico-container {
+      max-width: 340px; 
+    }
 
 
 
- /* PP MOBILE ~~~~~~~~~~~~~~~~~~~~~~ */
- .pp {
-  width: 100px; 
-  height: 100px; 
-  margin: 1em 0; 
-}
+  /* PP MOBILE ~~~~~~~~~~~~~~~~~~~~~~ */
+  .pp {
+    width: 100px; 
+    height: 100px; 
+    margin: 1em 0; 
+  }
 
 }
 
