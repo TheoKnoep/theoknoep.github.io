@@ -1,5 +1,7 @@
-/* Feuille de style Portfolio CV en lign */
+/* Feuille de style Portfolio CV en ligne */
 
 @import "./utils/variables.scss"; 
 @import "./utils/mixin.scss"; 
 
+@import "./base/reset"; 
+@import "./base/global"; 
