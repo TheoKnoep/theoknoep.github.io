@@ -3,5 +3,7 @@
 @import "./utils/variables.scss"; 
 @import "./utils/mixin.scss"; 
 
-@import "./base/reset"; 
+/* @import "./base/reset"; */
 @import "./base/global"; 
+
+@import "./composants/project-card"; 

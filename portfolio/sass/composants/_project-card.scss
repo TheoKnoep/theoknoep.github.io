@@ -1,0 +1,21 @@
+.projects-list {
+	display: flex; 
+	flex-wrap: wrap; 
+}
+
+.project-card {
+	display: flex; 
+	&_link {
+		text-decoration: none; 
+		padding: 1em 2em; 
+		margin: 1em 2em; 
+		border-radius: 25px; 
+		box-shadow: 2px 2px 8px rgba(0,0,0,0.25); 
+		text-align: center;
+		width: 400px; 
+	}
+}
+
+.project-logo {
+	width: 48px; 
+}
