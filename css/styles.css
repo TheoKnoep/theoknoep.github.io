@@ -152,6 +152,14 @@ MAIN CONTENT ===================================================================
    display: flex; 
    margin: 1.4em 0; 
 }
+.main-content .formation .projects-link {
+  width: 90%;
+  border-radius: 12px;
+  background-color: #00acc157;
+  padding: 1em;
+  font-style: italic;
+  text-align: center;
+}
 .main-content > section > article > .dot {
   flex-basis: 35px; 
   text-align: center; 
