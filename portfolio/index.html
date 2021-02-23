@@ -51,10 +51,15 @@
 	<!-- Analytics END -->
 </head>
 
-<body>
-	<h1 class="page-heading">Portfolio</h1>
-	<h2 id="parcours-web-dev">Projets parcours développeur web OpenClassrooms</h2>
-	<div class="page">
+<body class="portfolio-page">
+	<header>
+		<h1 class="page-heading">Portfolio</h1>
+		<a href="../index.html" class="backward-link"><span>←<br />Retour au CV</span></a>
+	</header>
+
+	<main class="page">
+		<h2 id="parcours-web-dev">Projets parcours développeur web OpenClassrooms</h2>
+		<!-- START template de carte de projet -->
 		<article class="project-card">
 			<h3>Animations CSS</h3>
 			<div class="project-container">
@@ -62,22 +67,124 @@
 					<img src="./img/screenshot-P3-ohmyfood-1.jpg" alt="capture d'écran du site démo" />
 				</div>
 				<div class="description-container" >
-					<p><strong>Contexte</strong> : réaliser le prototype HTML/CSS de maquettes graphiques pour un site de réservation de menu en ligne (2 pages)</p>
+					<p><strong>Contexte</strong> : 
+						réaliser le prototype HTML/CSS de maquettes graphiques pour un site de réservation de menu en ligne (2 pages)
+					</p>
 					<p><strong>Actions</strong> :</p>
 					<ul>
 						<li>Découpage et intégration de maquette</li>
 						<li>Utilisation des media queries pour l'adaptation à tous les devices</li>
-						<li>Animations et transitions <strong>CSS3</strong></li>
+						<li>Animations et transitions <strong>CSS3</strong> <i class="fab fa-css3-alt"></i></li>
 						<li>Optimisation du CSS avec SASS</li>
 					</ul>
 					<div class="cta-container">
-						<a href="https://theoknoep.github.io/TheoKnoepflin_3_31082020/" class="btn btn__main" title="Découvrir le projet en action">Démo</a>
-						<a href="https://github.com/TheoKnoep/TheoKnoepflin_3_31082020" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
+						<a href="https://theoknoep.github.io/TheoKnoepflin_3_31082020/" target="_blank" class="btn btn__main" title="Découvrir le projet en action">Démo</a>
+						<a href="https://github.com/TheoKnoep/TheoKnoepflin_3_31082020" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
 					</div>
 				</div>
 			</div>
 		</article>
-	</div>
+		<!-- END template de carte de projet -->
+
+		<article class="project-card">
+			<h3>Optimisations d'un site existant</h3>
+			<div class="project-container">
+				<div class="screenshot-container">
+					<img src="./img/screenshot-P4-la-chouette-agence_cropped.jpg" alt="capture d'écran du site démo" />
+				</div>
+				<div class="description-container" >
+					<p><strong>Contexte</strong> : 
+						À partir du <a href="https://theoknoep.github.io/TheoKnoepflin_4_10092020-old/" target="_blank" title="Visualisez l'état du site avant optimisations">code-source du site initial</a>, optimiser un site existant en termes de SEO et d'accessibilité en respectant le contexte technique d'origine et les bonnes pratiques de développement web (<strong>W3C</strong>, <strong>WCAG</strong>). 
+					</p>
+					<p><strong>Actions</strong> :</p>
+					<ul>
+						<li>Réalisation d'un <a href="./ressources/P4_01_analyse.pdf" target="_blank">analyse à partir des outils d'audit de site web</a> (Lighthouse, GTmetrix, Wave) et des bonnes pratiques de développement</li>
+						<li>Élaboration d'un plan d'action d'optimisations</li>
+						<li>Implémentation d'optimisations SEO et d'accessibilité dans le code</li>
+						<li>Rédaction d'un <a href="./ressources/P4_3_rapport-optimisations.pdf" target="_blank"></a>rapport d'optimisation documenté</a></li>
+					</ul>
+					<div class="cta-container">
+						<a href="https://theoknoep.github.io/TheoKnoepflin_4_10092020-new/index.html" target="_blank" class="btn btn__main" title="Découvrir le projet en action">Démo</a>
+						<a href="https://github.com/TheoKnoep/TheoKnoepflin_4_10092020-new" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="project-card">
+			<h3>Réalisation d'un site e-commerce</h3>
+			<div class="project-container">
+				<div class="screenshot-container">
+					<img src="./img/screenshot-P5-1.png" alt="capture d'écran du site démo" />
+				</div>
+				<div class="description-container" >
+					<p><strong>Contexte</strong> : 
+						réalisation d'un petit site e-commerce en JavaScript.
+					</p>
+					<p><strong>Actions</strong> :</p>
+					<ul>
+						<li>Récupération et affichage des informations produits via une API REST</li>
+						<li>Gestion du panier d'achat dans le local storage</li>
+						<li>Validation des données dans le formulaire de validation de commande</li>
+					</ul>
+					<div class="cta-container">
+						<a href="https://github.com/TheoKnoep/TheoKnoepflin_5_28102020" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="project-card">
+			<h3>Création d'une API REST</h3>
+			<div class="project-container">
+				<div class="screenshot-container">
+					<img src="./img/rest-api-ico.png" alt="capture d'écran du site démo" />
+				</div>
+				<div class="description-container" >
+					<p><strong>Contexte</strong> : 
+						à partir du front d'une application web de notation du goût de sauces piquantes, création de l'API REST côté serveur avec Node + Express pour traiter les requêtes fetch et la base de donnée MongoDB du projet.
+					</p>
+					<p><strong>Actions</strong> :</p>
+					<ul>
+						<li>Création d'un serveur Node.js avec Express</li>
+						<li>Implémentation des routes CRUD </li>
+						<li>Stockage des données dans MongoDB Atlas (solution cloud)</li>
+						<li>Mise en pratique des bonnes pratiques de sécurité (recommandations OWASP)</li>
+					</ul>
+					<div class="cta-container">
+						<a href="https://github.com/TheoKnoep/TheoKnoepflin_6_20112020" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="project-card">
+			<h3>Création d'un réseau social d'entreprise</h3>
+			<div class="project-container">
+				<div class="screenshot-container">
+					<img src="" alt="capture d'écran du site démo" />
+				</div>
+				<div class="description-container" >
+					<p><strong>Contexte</strong> : 
+						construction from scratch d'une application de type 9GAG avec comme fonctionnalités : créer et gérer son compte utilisateur, poster des articles et des medias, et consulter les publications des autres utilisateurs dans un fil d'actualité.
+					</p>
+					<p><strong>Actions</strong> :</p>
+					<ul>
+						<li>Création du frontend de l'application avec le framework VueJS</li>
+						<li>Création de l'API avec Node.js + Express</li>
+						<li>Stockage des données avec MySQL</li>
+						<li>Gestion des sessions utilisateurs avec Json Web Token</li>
+					</ul>
+					<div class="cta-container">
+						<a href="https://github.com/TheoKnoep/TheoKnoepflin_7_16122020" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
+					</div>
+				</div>
+			</div>
+		</article>
+
+
+
+	</main>
 	<h2>Autres projets</h2>
 	<ul class="projects-list">
 		<li class="project-card"><a class="project-card_link" href="https://theo.knoepflin.eu/projets/baltique" target="_blank">Voyage Scanbalt</a></li>

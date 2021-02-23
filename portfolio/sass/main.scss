@@ -3,10 +3,12 @@
 @import "./utils/variables.scss"; 
 @import "./utils/mixin.scss"; 
 
-/* @import "./base/reset"; */
+@import "./base/reset"; 
 @import "./base/global"; 
 
 @import "./layout/layout"; 
 
 @import "./composants/project-card"; 
 @import "./composants/btn"; 
+
+@import "./pages/portfolio"; 

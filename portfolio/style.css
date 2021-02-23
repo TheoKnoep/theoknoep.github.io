@@ -1,5 +1,9 @@
 /* Feuille de style Portfolio CV en ligne */
-/* @import "./base/reset"; */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   font-family: "Lato", "Trebuchet", sans-serif;
 }
@@ -13,6 +17,8 @@
   border-radius: 4px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
   padding: 1em;
+  margin: 2em 0;
+  line-height: 1.6;
 }
 .project-card h3 {
   color: #00ACC1;
@@ -22,14 +28,23 @@
   display: flex;
 }
 .project-card .project-container .screenshot-container {
-  width: 380px;
-  border: solid 1px rgba(0, 0, 0, 0.15);
+  width: 40%;
+  flex-grow: 1;
 }
 .project-card .project-container .screenshot-container img {
   width: 100%;
+  border: solid 1px rgba(0, 0, 0, 0.15);
 }
 .project-card .project-container .description-container {
+  width: 60%;
   margin: 0 0 0 1em;
+  flex-grow: 2;
+}
+.project-card .project-container .description-container ul, .project-card .project-container .description-container p {
+  margin: 1em 0;
+}
+.project-card .project-container .description-container ul li {
+  margin-left: 2em;
 }
 
 .btn {
@@ -53,7 +68,42 @@
   color: #00ACC1;
 }
 .btn:hover {
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+.btn + .btn {
+  margin-left: 1em;
+}
+
+.portfolio-page header {
+  margin: 0;
+  background-color: #00ACC1;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.portfolio-page header .page-heading {
+  margin-left: 80px;
+}
+.portfolio-page header .backward-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: small;
+  background-color: #00ACC1;
+  opacity: 0.8;
+  border-right: solid 8px #007f8e;
+}
+.portfolio-page h2 {
+  margin-top: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */
