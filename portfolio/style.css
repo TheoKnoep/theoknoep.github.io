@@ -4,26 +4,56 @@
   font-family: "Lato", "Trebuchet", sans-serif;
 }
 
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
+.page {
+  max-width: 860px;
+  margin: auto;
 }
 
 .project-card {
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 1em;
+}
+.project-card h3 {
+  color: #00ACC1;
+  font-size: 1.4em;
+}
+.project-card .project-container {
   display: flex;
 }
-.project-card_link {
-  text-decoration: none;
-  padding: 1em 2em;
-  margin: 1em 2em;
-  border-radius: 25px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-  text-align: center;
-  width: 400px;
+.project-card .project-container .screenshot-container {
+  width: 380px;
+  border: solid 1px rgba(0, 0, 0, 0.15);
+}
+.project-card .project-container .screenshot-container img {
+  width: 100%;
+}
+.project-card .project-container .description-container {
+  margin: 0 0 0 1em;
 }
 
-.project-logo {
-  width: 48px;
+.btn {
+  width: 140px;
+  border-radius: 2px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.4em 1em;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+  transition: all ease 160ms;
+}
+.btn__main {
+  background-color: #00ACC1;
+  border: solid 2px #00ACC1;
+  color: white;
+}
+.btn__secondary {
+  border: solid 2px #00ACC1;
+  color: #00ACC1;
+}
+.btn:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=style.css.map */

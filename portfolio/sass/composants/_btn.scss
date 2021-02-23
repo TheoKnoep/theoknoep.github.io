@@ -1,0 +1,23 @@
+.btn {
+	width: 140px; 
+	border-radius: 2px; 
+	text-align: center; 
+	font-weight: bold; 
+	padding: .4em 1em; 
+	display: inline-block; 
+	text-decoration: none;
+	box-shadow: 0 0 0 rgba(0,0,0,0.25);
+	transition: all ease 160ms; 
+	&__main {
+		background-color: $main-color;
+		border: solid 2px $main-color;
+		color: white; 
+	}
+	&__secondary {
+		border: solid 2px $main-color; 
+		color: $main-color; 
+	}
+	&:hover {
+		box-shadow: 2px 2px 4px rgba(0,0,0,0.25); 
+	}
+}
