@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+a {
+  color: #007f8e;
+}
+
 * {
   font-family: "Lato", "Trebuchet", sans-serif;
 }
@@ -104,6 +108,12 @@
 }
 .portfolio-page h2 {
   margin-top: 2em;
+}
+.portfolio-page .short-description {
+  font-style: italic;
+  font-weight: light;
+  padding: 1em 1em;
+  border-left: solid 14px rgba(0, 172, 193, 0.4);
 }
 
 /*# sourceMappingURL=style.css.map */

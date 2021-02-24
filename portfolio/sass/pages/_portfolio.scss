@@ -30,4 +30,10 @@
 	h2 {
 		margin-top: 2em; 
 	}
+	.short-description {
+		font-style: italic;  
+		font-weight: light;
+		padding: 1em 1em; 
+		border-left: solid 14px transparentize($main-color, 0.6);
+	}
 }
