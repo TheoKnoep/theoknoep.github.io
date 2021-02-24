@@ -10,8 +10,14 @@
 	}
 	.project-container {
 		display: flex; 
+		@include mobile-only(399px) {
+			display: block;
+		}
 		.screenshot-container {
 			width: 40%; 
+			@include mobile-only(399px) {
+				width: 100%;
+			}
 			flex-grow: 1; 
 			img {
 				width: 100%; 
@@ -22,6 +28,10 @@
 			width: 60%; 
 			margin: 0 0 0 1em; 
 			flex-grow: 2; 
+			@include mobile-only(399px) {
+				width: 100%;
+				margin: 0; 
+			}
 			.description-container__date {
 				font-style: italic;
 				color: rgba(0,0,0,0.65); 
@@ -38,7 +48,19 @@
 					margin-left: 2em; 
 				}
 			}
+			.cta-container {
+				@include mobile-only(399px) {
+					margin: auto;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+			}
 		}
 	}
-
+	.desktop-only {
+		@include mobile-only(399px) {
+			display: none; 
+		}
+	}
 }

@@ -31,9 +31,19 @@ a {
 .project-card .project-container {
   display: flex;
 }
+@media screen and (max-width: 399px) {
+  .project-card .project-container {
+    display: block;
+  }
+}
 .project-card .project-container .screenshot-container {
   width: 40%;
   flex-grow: 1;
+}
+@media screen and (max-width: 399px) {
+  .project-card .project-container .screenshot-container {
+    width: 100%;
+  }
 }
 .project-card .project-container .screenshot-container img {
   width: 100%;
@@ -43,6 +53,12 @@ a {
   width: 60%;
   margin: 0 0 0 1em;
   flex-grow: 2;
+}
+@media screen and (max-width: 399px) {
+  .project-card .project-container .description-container {
+    width: 100%;
+    margin: 0;
+  }
 }
 .project-card .project-container .description-container .description-container__date {
   font-style: italic;
@@ -57,6 +73,19 @@ a {
 }
 .project-card .project-container .description-container ul li {
   margin-left: 2em;
+}
+@media screen and (max-width: 399px) {
+  .project-card .project-container .description-container .cta-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 399px) {
+  .project-card .desktop-only {
+    display: none;
+  }
 }
 
 .btn {
@@ -84,6 +113,12 @@ a {
 }
 .btn + .btn {
   margin-left: 1em;
+}
+@media screen and (max-width: 399px) {
+  .btn + .btn {
+    margin-left: 0;
+    margin-top: 0.6em;
+  }
 }
 
 .portfolio-page header {
