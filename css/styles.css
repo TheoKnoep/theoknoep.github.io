@@ -206,6 +206,12 @@ SIDE CONTENT ==============================================
   padding: 6px 0; 
 }
 
+.side-content h3 {
+  text-align: center; 
+  font-style: italic; 
+  margin-top: 1em; 
+}
+
 .side-content p, .side-content ul {
   max-width: 280px; 
   margin: auto; 
