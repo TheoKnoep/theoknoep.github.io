@@ -36,4 +36,12 @@
 		padding: 1em 1em; 
 		border-left: solid 14px transparentize($main-color, 0.6);
 	}
+
+	.final-link {
+		width: 100%; 
+		margin-bottom: 4em; 
+		margin-top: 2em; 
+		padding: 1.6em 0 1.6em 0; 
+		cursor: pointer; 
+	}
 }
