@@ -1,0 +1,43 @@
+
+
+.masonry { 
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: -8px; /* Adjustment for the gutter */
+	width: 100%;
+}  
+.masonry-brick {
+	flex: auto;
+	height: 250px;
+	min-width: 150px;
+	margin: 0 8px 8px 0; /* Some gutter */
+}
+
+.vertical-masonry { 
+	display: flex;
+	flex-flow: column wrap;
+	max-height: 800px;
+	margin-left: -8px; /* Adjustment for the gutter */
+	width: 100%;
+}
+@media screen and (max-width: 960px) {
+	.vertical-masonry {
+		display: block; 
+	}
+}
+
+.vertical-masonry-brick {
+	margin: 0 8px 8px 0; /* Some gutter */
+	width: 33%; 
+}
+@media screen and (max-width: 960px) {
+	.vertical-masonry-brick {
+		width: 100%; 
+	}
+}
+
+
+.masonry img, .vertical-masonry img {
+	border: rgba(0,0,0,0.25) solid 1px; 
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.25); 
+}

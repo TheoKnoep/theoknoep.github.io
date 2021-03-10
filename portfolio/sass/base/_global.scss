@@ -1,3 +1,47 @@
 * {
 	font-family: 'Lato', 'Trebuchet', sans-serif; 
 }
+
+.special-header {
+	margin: 0; 
+	background-color: $main-color; 
+	color: white;
+	min-height: 60px; 
+	display: flex; 
+	align-items: center;
+	.page-heading {
+		margin-left: 80px; 
+	}
+	.backward-link {
+		position: fixed; 
+		width: 60px; 
+		height: 60px; 
+		top: 0; 
+		left: 0; 
+		display: flex; 
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		color: white; 
+		text-decoration: none; 
+		font-size: small; 
+		background-color: $main-color; 
+		opacity: 0.8; 
+		border-right: solid 8px darken($main-color, 10%); 
+	}
+}
+
+.short-description {
+	font-style: italic;  
+	font-weight: light;
+	padding: 1em 1em; 
+	border-left: solid 14px transparentize($main-color, 0.6);
+}
+
+.final-link {
+	width: 100%; 
+	margin-bottom: 4em; 
+	margin-top: 2em; 
+	padding: 1.6em 0 1.6em 0; 
+	cursor: pointer; 
+}
