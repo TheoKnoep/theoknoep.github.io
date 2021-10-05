@@ -2,5 +2,5 @@
 
 Projet n° 2 du parcours développeur web d'OpenClassrooms.
 
-*État du projet : en cours de développement*
+Objectif : intégrer une maquette en HTML + CSS en respectant le plus précisément possible la maquette de base. 
 
