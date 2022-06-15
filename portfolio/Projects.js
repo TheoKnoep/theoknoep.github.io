@@ -30,6 +30,66 @@ const Projects = [
 		"context" : "Parcours OpenClassrooms"
 	},
 	{
+		"name" : "Réalisation d'un site e-commerce", 
+		"time" : "octobre 2020", 
+		"year" : "2020", 
+		"description" : `<div class=description-container><p class=description-container__date>Octobre 2020<p><strong>Contexte</strong> : réalisation d'un petit site e-commerce en JavaScript.<p><strong>Actions</strong> :<ul><li>Récupération et affichage des informations produits via une API REST<li>Gestion du panier d'achat dans le local storage<li>Validation des données dans le formulaire de validation de commande</ul><div class=cta-container><a class="btn btn__secondary"href=https://github.com/TheoKnoep/TheoKnoepflin_5_28102020 target=_blank title="Le code-source sur Github">Code</a></div></div>`, 
+		"gallery" : [
+			{
+				"src" : "./img/screenshot-P5-cart.jpg", 
+				"alt" : "capture d'écran du site démo"
+			}
+		], 
+		"techno" : ["JavaScript", "HTML/CSS"], 
+		"skills" : ["Front-end"], 
+		"context" : "Parcours OpenClassrooms"
+	}, 
+	{
+		"name" : "Création d'une API REST", 
+		"time" : "décembre 2020", 
+		"year" : "2020", 
+		"description" : `<div class=description-container><p class=description-container__date>Décembre 2020<p><strong>Contexte</strong> : à partir du front d'une application web de notation du goût de sauces piquantes, création de l'API REST côté serveur avec Node + Express pour traiter les requêtes fetch et la base de donnée MongoDB du projet.<p><strong>Actions</strong> :<ul><li>Création d'un serveur Node.js avec Express<li>Implémentation des routes CRUD<li>Stockage des données dans MongoDB Atlas (solution cloud)<li>Mise en pratique des bonnes pratiques de sécurité (recommandations OWASP)</ul><div class=cta-container><a class="btn btn__secondary"href=https://github.com/TheoKnoep/TheoKnoepflin_6_20112020 target=_blank title="Le code-source sur Github">Code</a></div></div>`, 
+		"gallery" : [
+			{
+				"src" : "./img/screenshot-P5-cart.jpg", 
+				"alt" : "capture d'écran du site démo"
+			}
+		], 
+		"techno" : [""], 
+		"skills" : ["Back-end"], 
+		"context" : "Parcours OpenClassrooms"
+	}, 
+	{
+		"name" : "", 
+		"time" : "", 
+		"year" : "", 
+		"description" : ``, 
+		"gallery" : [
+			{
+				"src" : "", 
+				"alt" : ""
+			}
+		], 
+		"techno" : [""], 
+		"skills" : [""], 
+		"context" : ""
+	}, 
+	{
+		"name" : "", 
+		"time" : "", 
+		"year" : "", 
+		"description" : ``, 
+		"gallery" : [
+			{
+				"src" : "", 
+				"alt" : ""
+			}
+		], 
+		"techno" : [""], 
+		"skills" : [""], 
+		"context" : ""
+	},
+	{
 		"name" : "", 
 		"time" : "", 
 		"year" : "", 
