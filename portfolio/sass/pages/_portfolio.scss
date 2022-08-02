@@ -8,4 +8,16 @@
 		font-size: .7em; 
 		font-style: italic; 
 	}
+
+	.tags-techno {
+		display: flex;
+    	list-style: none;
+
+		li {
+			margin: 0.4em;
+			padding: 0.1em 1.2em;
+			border-radius: 1000px;
+			border: solid $main-color 1px;
+		}
+	}
 }

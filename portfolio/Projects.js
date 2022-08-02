@@ -66,7 +66,7 @@ const Projects = [
 		"description" : `<div class=description-container><p class=description-container__date>Décembre 2020<p><strong>Contexte</strong> : à partir du front d'une application web de notation du goût de sauces piquantes, création de l'API REST côté serveur avec Node + Express pour traiter les requêtes fetch et la base de donnée MongoDB du projet.<p><strong>Actions</strong> :<ul><li>Création d'un serveur Node.js avec Express<li>Implémentation des routes CRUD<li>Stockage des données dans MongoDB Atlas (solution cloud)<li>Mise en pratique des bonnes pratiques de sécurité (recommandations OWASP)</ul><div class=cta-container><a class="btn btn__secondary"href=https://github.com/TheoKnoep/TheoKnoepflin_6_20112020 target=_blank title="Le code-source sur Github">Code</a></div></div>`, 
 		"gallery" : [
 			{
-				"src" : "./img/screenshot-P5-cart.jpg", 
+				"src" : "./img/rest-api-ico.png", 
 				"alt" : "capture d'écran du site démo"
 			}
 		], 
@@ -118,5 +118,20 @@ const Projects = [
 		"techno" : ["InDesign", "Illustrator"], 
 		"skills" : ["Graphisme", "Direction artistique", "Mise en page"], 
 		"context" : "1001 Huiles"
+	}, 
+	{
+		"name" : "Réalisation d'un thème WordPress", 
+		"time" : "septembre 2015", 
+		"year" : "2015", 
+		"description" : `<div class=description-container><p class=description-container__date><p><strong>Contexte</strong> : text.<p><strong>Actions</strong> :<ul><li>un</li></ul><div class=cta-container><a class="btn btn__main"href="#" target="_blank" title="Découvrir le résultat final">CTA</a></div></div>`, 
+		"gallery" : [
+			{
+				"src" : null, 
+				"alt" : null
+			}
+		], 
+		"techno" : ["PHP", "WordPress", "HTML/CSS"], 
+		"skills" : ["Intégration", "Développement"], 
+		"context" : "Grenoble Ecole de Management"
 	}
 ];

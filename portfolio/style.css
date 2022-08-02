@@ -173,6 +173,16 @@ a {
   font-size: 0.7em;
   font-style: italic;
 }
+.portfolio-page .tags-techno {
+  display: flex;
+  list-style: none;
+}
+.portfolio-page .tags-techno li {
+  margin: 0.4em;
+  padding: 0.1em 1.2em;
+  border-radius: 1000px;
+  border: solid #00ACC1 1px;
+}
 
 .masonry {
   display: flex;

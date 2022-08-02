@@ -1,5 +1,6 @@
 
 console.log(parseProjects()); 
+displayProjects(); 
 
 /**
  * read all the projects meta and return a de-duplicated list of values
@@ -76,6 +77,25 @@ function removeEmptyStrings(array) {
 // displayProjects(); 
 function displayProjects() {
 	for (let i in Projects) {
-		document.querySelector('main.page').insertAdjacentHTML('afterbegin', `-> ${Projects[i].name}<br/>`); 
+		let image = Projects[i].gallery[0].src ? `<img width="300" src="${Projects[i].gallery[0].src}" alt="${Projects[i].gallery[0].alt}"/>` : ''; 
+		
+		let tagsTechno = ""; 
+		console.log(Projects[i].techno); 
+		for (let ii in Projects[i].techno) {
+			tagsTechno += `<li>${Projects[i].techno[ii]}</li>`; 
+		}
+
+
+		let template = `<article class="project-card">
+			<h2>${Projects[i].name}</h2>
+			<div class="label label-year description-container__date">● ${Projects[i].year}</div>
+			${image}
+			<ul class="tags-techno">
+				${tagsTechno}
+			</ul>
+
+		</article>`; 
+
+		document.querySelector('#projects-container').insertAdjacentHTML('beforeend', template); 
 	}
 }
