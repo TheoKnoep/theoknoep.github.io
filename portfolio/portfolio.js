@@ -1,6 +1,10 @@
 
 console.log(parseProjects()); 
-displayProjects(); 
+
+
+window.addEventListener('DOMContentLoaded', () => {
+	displayProjects(); 
+})
 
 /**
  * read all the projects meta and return a de-duplicated list of values
@@ -86,15 +90,30 @@ function displayProjects() {
 		}
 
 
-		let template = `<article class="project-card">
-			<h2>${Projects[i].name}</h2>
-			<div class="label label-year description-container__date">● ${Projects[i].year}</div>
-			${image}
-			<ul class="tags-techno">
-				${tagsTechno}
-			</ul>
+		// let template = `<article class="project-card">
+		// 	<h2>${Projects[i].name}</h2>
+		// 	<div class="label label-year description-container__date">● ${Projects[i].year}</div>
+		// 	${image}
+		// 	<ul class="tags-techno">
+		// 		${tagsTechno}
+		// 	</ul>
 
-		</article>`; 
+		// </article>`; 
+
+		let template = `<article class="project-card" data-context="${Projects[i].context}">
+						<h3>${Projects[i].name}</h3>
+						<div class="project-container">
+							<div class="screenshot-container">
+								${image}
+							</div>
+							<div class="description-container">
+								<div class="tags-container">
+								${tagsTechno}
+								</div>
+								${Projects[i].description}
+							</div>
+						</div>
+					</article>`; 
 
 		document.querySelector('#projects-container').insertAdjacentHTML('beforeend', template); 
 	}
