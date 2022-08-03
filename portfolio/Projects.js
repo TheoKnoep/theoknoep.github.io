@@ -77,7 +77,7 @@ const Projects = [
 			}
 		], 
 		"techno" : ["HTML/CSS"], 
-		"skills" : ["SEO", "audit de site"],
+		"skills" : ["SEO", "Audit de site"],
 		"context" : "Parcours OpenClassrooms"
 	},
 	{
@@ -122,7 +122,7 @@ const Projects = [
 			}
 		], 
 		"techno" : ["NodeJS+Express", "VueJS"], 
-		"skills" : [""], 
+		"skills" : ["Front-end", "Back-end"], 
 		"context" : "Parcours OpenClassrooms"
 	}, 
 	{
