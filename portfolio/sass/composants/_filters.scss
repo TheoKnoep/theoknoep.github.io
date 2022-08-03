@@ -1,0 +1,15 @@
+#filters-container {
+    #filters-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .select-group {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            @media screen and (max-width: 800px) {
+                width: 48%;
+            }
+        }
+    }
+}
