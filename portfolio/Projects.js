@@ -4,9 +4,9 @@ const Projects = [
 		"time" : "mars. 2022", 
 		"year" : "2022", 
 		"description" : `<div >
-			<p class=description-container__date>Mars 2022<p>
-			<strong>Contexte</strong> : Le site principal de la société France-Sélection propose l'intégralité de la réglementation incendie en accès numérique, avec certains contenus en accès payant. Composé de différentes couches technologiques qui s'accumulent depuis une vingtaine d'année, l'enjeu était de remettre à plat l'organisation des contenus du site, d'en faciliter la navigation, et de proposer un nouveau design. 
-			<p><strong>Actions</strong> :
+				<p class=description-container__date>Mars 2022<p>
+				<strong>Contexte</strong> : Le site principal de la société France-Sélection propose l'intégralité de la réglementation incendie en accès numérique, avec certains contenus en accès payant. Composé de différentes couches technologiques qui s'accumulent depuis une vingtaine d'année, l'enjeu était de remettre à plat l'organisation des contenus du site, d'en faciliter la navigation, et de proposer un nouveau design. 
+				<p><strong>Actions</strong> :
 				<ul>
 					<li>Suivi et gestion de projet en collaboration avec les autres parties prenantes de l'entreprise pendant 6 mois</li>
 					<li>Propositions de maquettes pour raffraîchir l'apparence graphique du site</li>
