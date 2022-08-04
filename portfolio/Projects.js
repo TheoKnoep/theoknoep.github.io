@@ -51,7 +51,7 @@ const Projects = [
 		"context" : "France-Sélection"
 	},
 	{
-		"name" : "Animations CSS", 
+		"name" : "Intégration de maquettes et Animations CSS", 
 		"time" : "sept. 2020", 
 		"year" : "2020", 
 		"description" : `<div ><p class=description-container__date>Septembre 2020<p><strong>Contexte</strong> : réaliser le prototype HTML/CSS de maquettes graphiques pour un site de réservation de menu en ligne (2 pages)<p><strong>Actions</strong> :<ul><li>Découpage et intégration de maquette<li>Utilisation des media queries pour l'adaptation à tous les devices<li>Animations et transitions <strong>CSS3</strong> <i aria-hidden=true class="fa-css3-alt fab"></i><li>Optimisation du CSS avec SASS</ul><div class=cta-container><a class="btn btn__main"href=https://theoknoep.github.io/TheoKnoepflin_3_31082020/ target=_blank title="Découvrir le projet en action">Démo</a> <a class="btn btn__secondary"href=https://github.com/TheoKnoep/TheoKnoepflin_3_31082020 target=_blank title="Le code-source sur Github">Code</a></div></div>`, 
@@ -61,7 +61,7 @@ const Projects = [
 				"alt" : "capture d'écran du site démo"
 			}
 		], 
-		"techno" : ["HTML/CSS", "animations CSS"], 
+		"techno" : ["HTML/CSS", "Animations CSS"], 
 		"skills" : ["Intégration", "Animations CSS"], 
 		"context" : "Parcours OpenClassrooms"
 	}, 
