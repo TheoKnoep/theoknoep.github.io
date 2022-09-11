@@ -164,6 +164,18 @@ const getSelectedFilters = function() {
 	return output; 
 }
 
+function getSelectedFilters2() {
+	let stuff = document.querySelectorAll('#filters-form select');
+	console.log(stuff); 
+	let output = {
+		"year": [document.querySelector("#years-select").value], 
+		"skills": ['Front-end'], 
+		"techno": [],
+		"context": []
+	}
+	return output; 
+}
+
 
 const filter = {
 	"year": [], 
@@ -171,10 +183,11 @@ const filter = {
 	"techno": [],
 	"context": []
 }
+
 function filterProjects(filter) {
 	//if the filter is empty, we need to display all the available elements : 
 	let AllRawElements = parseProjects(); 
-	if (filter.year.length === 0 ) { filter.year = AllRawElements.years }
+	if (filter.year.length === 0 || filter.year === ['']) { filter.year = AllRawElements.years }
 	if (filter.skills.length === 0 ) { filter.skills = AllRawElements.skills }
 	if (filter.techno.length === 0 ) { filter.techno = AllRawElements.techno }
 	if (filter.context.length === 0 ) { filter.context = AllRawElements.contexts }
@@ -193,7 +206,7 @@ function filterProjects(filter) {
 }
 
 
-console.log("projets de 2021 : ", filterProjects(filter)); 
+console.log("test filter : ", filterProjects(filter)); 
 
 
 
@@ -211,10 +224,6 @@ const displayCalendarIcon = function() {
 	return 'done'; 
 }; 
 
-function deleteFromArray(element, array) {
-	if (!Array.inArray(array)) { return 'not an array' }
-}
-
 
 // Iterate through each element in the
 // first array and if some of them
@@ -223,8 +232,4 @@ function deleteFromArray(element, array) {
 function arraysHaveCommonElements(arr1, arr2) {
     return arr1.some(item => arr2.includes(item))
 }
-let arr1 = ["Intégration", "Graphisme"]; 
-let arr2 = ["HTML/CSS", "Intégration"]; 
 
-console.log('COmmons ???', arraysHaveCommonElements(arr1, arr2)); 
-console.log('COmmons ???', arraysHaveCommonElements(arr2, arr1)); 
