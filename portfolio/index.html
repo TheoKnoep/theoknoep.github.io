@@ -58,208 +58,41 @@
 	</header>
 
 	<main class="page">
-		<h2 id="parcours-web-dev">Projets du parcours développeur web OpenClassrooms</h2>
-		<div class="short-description">
-			<p>
-				Formation en ligne axée sur la pratique. 
-				J'ai réalisé ces projets sous forme de cas pratiques, 
-				en mobilisant apprentissage théorique en autonomie et application concrète.</p>
-			<p><a href="./ressources/plaquette-parcours-dev-web-openclassrooms.pdf" target="_blank">Description de la formation</a></p>
+		<div id="filters-container">
+			<form id="filters-form">
+				<div class="select-group">
+					<label for="skill-select">Compétence mobilisée</label>
+					<select name="skills" id="skill-select">
+						<option value="">--</option>
+						<option value="0">Intégration</option>
+					</select>
+				</div>
+				
+				<div class="select-group">
+					<label for="techno-select">Technologies utilisées</label>
+					<select name="technos" id="techno-select">
+						<option value="">--</option>
+						<option value="0">HTML/CSS</option>
+					</select>
+				</div>
+				<div class="select-group">
+					<label for="context-select">Contexte</label>
+					<select name="contexts" id="context-select">
+						<option value="">--</option>
+						<option value="0">France-Sélection</option>
+					</select>
+				</div>
+				<!-- <div class="select-group">
+					<label for="year-select">Année</label>
+					<select name="years" id="year-select">
+						<option value="">--</option>
+						<option value="0">2022</option>
+					</select>
+				</div> -->
+				
+			</form>
 		</div>
-		
-		<!-- START template de carte de projet -->
-		<article class="project-card">
-			<h3>Animations CSS</h3>
-			<div class="project-container">
-				<div class="screenshot-container">
-					<img src="./img/screenshot-P3-ohmyfood-1.jpg" alt="capture d'écran du site démo" />
-				</div>
-				<div class="description-container" >
-					<p class="description-container__date">Septembre 2020</p>
-					<p><strong>Contexte</strong> : 
-						réaliser le prototype HTML/CSS de maquettes graphiques pour un site de réservation de menu en ligne (2 pages)
-					</p>
-					<p><strong>Actions</strong> :</p>
-					<ul>
-						<li>Découpage et intégration de maquette</li>
-						<li>Utilisation des media queries pour l'adaptation à tous les devices</li>
-						<li>Animations et transitions <strong>CSS3</strong> <i class="fab fa-css3-alt"></i></li>
-						<li>Optimisation du CSS avec SASS</li>
-					</ul>
-					<div class="cta-container">
-						<a href="https://theoknoep.github.io/TheoKnoepflin_3_31082020/" target="_blank" class="btn btn__main" title="Découvrir le projet en action">Démo</a>
-						<a href="https://github.com/TheoKnoep/TheoKnoepflin_3_31082020" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
-					</div>
-				</div>
-			</div>
-		</article>
-		<!-- END template de carte de projet -->
-
-		<article class="project-card">
-			<h3>Optimisations d'un site existant</h3>
-			<div class="project-container">
-				<div class="screenshot-container">
-					<img src="./img/screenshot-P4-la-chouette-agence_cropped.jpg" alt="capture d'écran du site démo" />
-				</div>
-				<div class="description-container" >
-					<p class="description-container__date">Septembre 2020</p>
-					<p><strong>Contexte</strong> : 
-						À partir du <a href="https://theoknoep.github.io/TheoKnoepflin_4_10092020-old/" target="_blank" title="Visualisez l'état du site avant optimisations">code-source du site initial</a>, optimiser un site existant en termes de SEO et d'accessibilité en respectant le contexte technique d'origine et les bonnes pratiques de développement web (<strong>W3C</strong>, <strong>WCAG</strong>). 
-					</p>
-					<p><strong>Actions</strong> :</p>
-					<ul>
-						<li>Réalisation d'une <a href="./ressources/P4_01_analyse.pdf" target="_blank">analyse à partir des outils d'audit de site web</a> (Lighthouse, GTmetrix, Wave) et des bonnes pratiques de développement</li>
-						<li>Élaboration d'un plan d'action d'optimisations</li>
-						<li>Implémentation d'optimisations SEO et d'accessibilité dans le code</li>
-						<li>Rédaction d'un <a href="./ressources/P4_3_rapport-optimisations.pdf" target="_blank">rapport d'optimisation documenté</a></li>
-					</ul>
-					<div class="cta-container">
-						<a href="https://theoknoep.github.io/TheoKnoepflin_4_10092020-new/index.html" target="_blank" class="btn btn__main" title="Découvrir le projet en action">Démo</a>
-						<a href="https://github.com/TheoKnoep/TheoKnoepflin_4_10092020-new" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
-					</div>
-				</div>
-			</div>
-		</article>
-
-		<article class="project-card">
-			<h3>Réalisation d'un site e-commerce</h3>
-			<div class="project-container">
-				<div class="screenshot-container">
-					<img src="./img/screenshot-P5-cart.jpg" alt="capture d'écran du site démo" />
-				</div>
-				<div class="description-container" >
-					<p class="description-container__date">Octobre 2020</p>
-					<p><strong>Contexte</strong> : 
-						réalisation d'un petit site e-commerce en JavaScript.
-					</p>
-					<p><strong>Actions</strong> :</p>
-					<ul>
-						<li>Récupération et affichage des informations produits via une API REST</li>
-						<li>Gestion du panier d'achat dans le local storage</li>
-						<li>Validation des données dans le formulaire de validation de commande</li>
-					</ul>
-					<div class="cta-container">
-						<a href="https://github.com/TheoKnoep/TheoKnoepflin_5_28102020" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
-					</div>
-				</div>
-			</div>
-		</article>
-
-		<article class="project-card">
-			<h3>Création d'une API REST</h3>
-			<div class="project-container">
-				<div class="screenshot-container desktop-only">
-					<img src="./img/rest-api-ico.png" alt="capture d'écran du site démo" />
-				</div>
-				<div class="description-container" >
-					<p class="description-container__date">Décembre 2020</p>
-					<p><strong>Contexte</strong> : 
-						à partir du front d'une application web de notation du goût de sauces piquantes, création de l'API REST côté serveur avec Node + Express pour traiter les requêtes fetch et la base de donnée MongoDB du projet.
-					</p>
-					<p><strong>Actions</strong> :</p>
-					<ul>
-						<li>Création d'un serveur Node.js avec Express</li>
-						<li>Implémentation des routes CRUD </li>
-						<li>Stockage des données dans MongoDB Atlas (solution cloud)</li>
-						<li>Mise en pratique des bonnes pratiques de sécurité (recommandations OWASP)</li>
-					</ul>
-					<div class="cta-container">
-						<a href="https://github.com/TheoKnoep/TheoKnoepflin_6_20112020" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
-					</div>
-				</div>
-			</div>
-		</article>
-
-		<article class="project-card">
-			<h3>Création d'un réseau social d'entreprise</h3>
-			<div class="project-container">
-				<div class="screenshot-container">
-					<img src="./img/screenshot-P7-publications-feed-cropped.jpg" alt="capture d'écran du site démo" />
-				</div>
-				<div class="description-container" >
-					<p class="description-container__date">Janvier 2021</p>
-					<p><strong>Contexte</strong> : 
-						construction from scratch d'une application de type 9GAG avec comme fonctionnalités : créer et gérer son compte utilisateur, poster des articles et des medias, et consulter les publications des autres utilisateurs dans un fil d'actualité.
-					</p>
-					<p><strong>Actions</strong> :</p>
-					<ul>
-						<li>Création du frontend de l'application avec le framework VueJS</li>
-						<li>Création de l'API avec Node.js + Express</li>
-						<li>Stockage des données avec MySQL</li>
-						<li>Gestion des sessions utilisateurs avec Json Web Token</li>
-					</ul>
-					<div class="cta-container">
-						<a href="https://github.com/TheoKnoep/TheoKnoepflin_7_16122020" target="_blank" class="btn btn__secondary" title="Le code-source sur Github">Code</a>
-					</div>
-				</div>
-			</div>
-		</article>
-
-
-
-
-
-	
-	<h2 id="realisations">Réalisation probantes</h2>
-	<div class="short-description">
-		<p>
-			Ces projets ont été réalisés au cours de mes <a href="../index.html#experiences" >différentes expériences professionnelles</a>
-		</p>
-	</div>
-
-		<article class="project-card">
-			<h3 id="maxpetit">Réalisation d'un site vitrine professionnel</h3>
-			<div class="project-container">
-				<div class="screenshot-container">
-					<img src="./img/Maquette-categorie-template.jpg" alt="Maquette du site Max Petit" />
-				</div>
-				<div class="description-container" >
-					<p class="description-container__date">Février 2021</p>
-					<p><strong>Contexte</strong> : 
-						Max Petit est un fournisseur de fournitures industrielles qui souhaite développer sa présence en ligne. <br />
-						Ils ont besoin d'un site léger qui puisse présenter la société, son identité, et les principaux produits qu'ils peuvent fournir à leurs clients.
-					</p>
-					<p><strong>Actions</strong> :</p>
-					<ul>
-						<li>Gestion de projet de la création du site (définitions du cahier des charges en lien avec la responsable communication de la société, planification, accompagnement client)</li>
-						<li>Création de style tiles pour définir une orientation graphique</li>
-						<li>Création des maquettes graphiques du site</li>
-						<li>Intégration HTML5 et CSS3 des pages statiques du site</li>
-					</ul>
-					<div class="cta-container">
-						<a href="./ressources/demo-maquettes-maxpetit.html" target="_blank" class="btn btn__secondary" title="Découvrir le site de démo">Maquettes graphiques</a>
-						<a href="https://ww2.fournitures-maxpetit.fr/nos-produits.html" target="_blank" class="btn btn__main" title="Découvrir le site de démo">Version finale du site</a>
-					</div>
-				</div>
-			</div>
-		</article>
-
-		<article class="project-card">
-			<h3>Rebranding et réalisation de plaquette corporate</h3>
-			<div class="project-container">
-				<div class="screenshot-container">
-					<img src="./img/plaquette1001h-new.png" alt="la nouvelle plaquette de Mille et Une Huiles" />
-				</div>
-				<div class="description-container" >
-					<p class="description-container__date">Mai 2019</p>
-					<p><strong>Contexte</strong> : 
-						Mille et Une Huiles est une marque de produits d'épicerie fine. <br />
-						→ Pour étendre sa sélection aux produits sucrés, l'entreprise a lancé une nouvelle marque “Les Ateliers M”. <br />
-						→ L'enjeu était alors de définir une nouvelle identité graphique qui lie les 2 marques tout en explicitant ses deux positionnements salés/sucrés pour être compris des anciens clients commme des nouveaux. 
-					</p>
-					<p><strong>Actions</strong> :</p>
-					<ul>
-						<li>Réflexion graphique pour définir les éléments d'identité de la nouvelle marque</li>
-						<li>Lier les deux marques dans un concept unique</li>
-						<li>Réaliser la maquette de la nouvelle plaquette d'entreprise avec InDesign</li>
-						<li>Assurer la relation avec l'imprimeur pour la fabrication</li>
-					</ul>
-					<div class="cta-container">
-						<a href="./ressources/Plaquette-1001huiles-AteliersM.pdf" target="_blank" class="btn btn__main" title="Découvrir le résultat final">Voir la plaquette</a>
-					</div>
-				</div>
-			</div>
-		</article>
+		<div id="projects-container"></div>
 
 
 		<a class="final-link btn btn__main" href="../">
