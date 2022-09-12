@@ -40,7 +40,7 @@ const Projects = [
 					<li>Développement d'une progressive web app en utilisant les dernières possibilités permises par cet ensemble de technologies : l'installabilité, la gestion du cache pour permettre la consultation en mode hors-ligne, la mise à jour des contenus, etc.</li>
 				</ul>
 				<div class=cta-container>
-					<a class="btn btn__main" href="https://sitesecurite.com/applicationfs.php" target=_blank title="Découvrir le projet en action">Installation de la PWA</a>
+					<a class="btn btn__main" href="https://www.sitesecurite.com/applicationfs.php" target=_blank title="Découvrir le projet en action">Installation de la PWA</a>
 				</div>
 			</div>`, 
 		"gallery" : [

@@ -1,12 +1,22 @@
 
-// console.log(parseProjects()); 
+
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
-	displayProjects(); 
+	displayProjects(Projects); 
 	displayCalendarIcon(); 
 	displayFilters(); 
+
+	const allSelectDetails = document.querySelectorAll('#filters-form select'); 
+	allSelectDetails.forEach(node => {
+		node.addEventListener('change', event => {
+			displayProjects(filterProjects(getSelectedFilters())); 
+		})
+	})
 })
+
+
 
 /**
  * Read all the projects meta and return a de-duplicated list of values
@@ -82,19 +92,20 @@ function removeEmptyStrings(array) {
 /**
  * Create the DOM structure for displaying the Projects on the page
  */ 
-function displayProjects() {
-	for (let i in Projects) {
-		let image = Projects[i].gallery[0].src ? `<img width="300" src="${Projects[i].gallery[0].src}" alt="${Projects[i].gallery[0].alt}"/>` : ''; 
+function displayProjects(arrayOfProjects) {
+	let allProjectsInHTML = ''; 
+	for (let i in arrayOfProjects) {
+		let image = arrayOfProjects[i].gallery[0].src ? `<img width="300" src="${arrayOfProjects[i].gallery[0].src}" alt="${arrayOfProjects[i].gallery[0].alt}"/>` : ''; 
 		
 		let tagsTechno = ""; 
-		// console.log(Projects[i].techno); 
-		for (let ii in Projects[i].techno) {
-			tagsTechno += `<li>${Projects[i].techno[ii]}</li>`; 
+		// console.log(arrayOfProjects[i].techno); 
+		for (let ii in arrayOfProjects[i].techno) {
+			tagsTechno += `<li>${arrayOfProjects[i].techno[ii]}</li>`; 
 		}
 
 		let template = `
-					<article class="project-card" data-context="${Projects[i].context}" data-year="${Projects[i].year}" data-skills="${Projects[i].skills}" data-techno="${Projects[i].techno}" id="project-${i}">
-						<h3>${Projects[i].name}</h3>
+					<article class="project-card" data-context="${arrayOfProjects[i].context}" data-year="${arrayOfProjects[i].year}" data-skills="${arrayOfProjects[i].skills}" data-techno="${arrayOfProjects[i].techno}" id="project-${i}">
+						<h3>${arrayOfProjects[i].name}</h3>
 						<div class="project-container">
 							<div class="screenshot-container">
 								${image}
@@ -103,13 +114,17 @@ function displayProjects() {
 								<div class="tags-container">
 									${tagsTechno}
 								</div>
-								${Projects[i].description}
+								${arrayOfProjects[i].description}
 							</div>
 						</div>
 					</article>`; 
 
-		document.querySelector('#projects-container').insertAdjacentHTML('beforeend', template); 
+		// document.querySelector('#projects-container').insertAdjacentHTML('beforeend', template); 
+		allProjectsInHTML += template; 
 	}
+
+	console.log(allProjectsInHTML); 
+	document.querySelector('#projects-container').innerHTML = allProjectsInHTML.length > 0 ? allProjectsInHTML : `<p>Aucun projet ne correspond à vos critères de recherche</p>`; 
 }
 
 
@@ -148,49 +163,24 @@ const createDOMfilter = function(name, data) {
 	</div>`; 
 }
 
-
-
-const getSelectedFilters = function() {
-	let stuff = document.querySelectorAll('#filters-form select');
-	console.log(stuff); 
-	let output = []; 
-	stuff.forEach(item => {
-		// console.log("name : ", item.name); 
-		// console.log("value : ", item.value); 
-		let name = item.name; 
-		let value = item.value; 
-		output.push( {name, value} ); 
-	})
-	return output; 
-}
-
-function getSelectedFilters2() {
-	let stuff = document.querySelectorAll('#filters-form select');
-	console.log(stuff); 
+function getSelectedFilters() {
 	let output = {
 		"year": [document.querySelector("#years-select").value], 
-		"skills": ['Front-end'], 
-		"techno": [],
-		"context": []
+		"skills": [document.querySelector("#skills-select").value], 
+		"techno": [document.querySelector("#techno-select").value],
+		"context": [document.querySelector("#contexts-select").value]
 	}
+	// console.log('filters : ', output); 
 	return output; 
-}
-
-
-const filter = {
-	"year": [], 
-	"skills": ['Front-end'], 
-	"techno": [],
-	"context": []
 }
 
 function filterProjects(filter) {
 	//if the filter is empty, we need to display all the available elements : 
 	let AllRawElements = parseProjects(); 
-	if (filter.year.length === 0 || filter.year === ['']) { filter.year = AllRawElements.years }
-	if (filter.skills.length === 0 ) { filter.skills = AllRawElements.skills }
-	if (filter.techno.length === 0 ) { filter.techno = AllRawElements.techno }
-	if (filter.context.length === 0 ) { filter.context = AllRawElements.contexts }
+	if (filter.year.length === 0 || filter.year[0] === "") { filter.year = AllRawElements.years }
+	if (filter.skills.length === 0 || filter.skills[0] === "") { filter.skills = AllRawElements.skills }
+	if (filter.techno.length === 0 || filter.techno[0] === "") { filter.techno = AllRawElements.techno }
+	if (filter.context.length === 0 || filter.context[0] === "") { filter.context = AllRawElements.contexts }
 
 	return Projects.filter(project => {
 		if (
@@ -204,11 +194,6 @@ function filterProjects(filter) {
 		return false; 
 	})
 }
-
-
-console.log("test filter : ", filterProjects(filter)); 
-
-
 
 
 
