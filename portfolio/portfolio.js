@@ -124,7 +124,7 @@ function displayProjects(arrayOfProjects) {
 	}
 
 	console.log(allProjectsInHTML); 
-	document.querySelector('#projects-container').innerHTML = allProjectsInHTML.length > 0 ? allProjectsInHTML : `<p>Aucun projet ne correspond à vos critères de recherche</p>`; 
+	document.querySelector('#projects-container').innerHTML = allProjectsInHTML.length > 0 ? allProjectsInHTML : `<p>Aucun projet ne correspond à vos critères de recherche<br/><button onclick="resetFilters()">Réinitaliser les filters ?</button></p>`; 
 }
 
 
@@ -196,6 +196,14 @@ function filterProjects(filter) {
 }
 
 
+function resetFilters() {
+	const allFilters = document.querySelectorAll('.select-group select'); 
+	allFilters.forEach(filter => {
+		filter.value = ""; 
+	})
+	displayProjects(filterProjects(getSelectedFilters())); 
+	return "reseted"; 
+}
 
 
 
