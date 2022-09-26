@@ -150,13 +150,13 @@ const createDOMfilter = function(name, data) {
 		"skills": "Compétence mobilisée", 
 		"techno": "Technologie utilisée"
 	}
-	let selectYearOptions = '<option value="">--</option>'; 
+	let selectYearOptions = '<option value=""><em>Sélectionner</em></option>'; 
 	data.forEach(item => {
 		let newInsert = `<option value="${item}">${item}</option>`; 
 		selectYearOptions += newInsert; 
 	})
 	return selectYear = `<div class="select-group">
-		<label for="${name}-select">${readAbleName[name]}</label>
+		<label for="${name}-select">${readAbleName[name]} : </label>
 		<select name="${name}" id="${name}-select">
 			${selectYearOptions}
 		</select>

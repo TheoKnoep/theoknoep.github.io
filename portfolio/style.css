@@ -186,13 +186,32 @@ a {
 #filters-container #filters-form .select-group {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: calc(25% - 18px);
 }
 @media screen and (max-width: 800px) {
   #filters-container #filters-form .select-group {
     width: 48%;
   }
 }
+
+
+#filters-container #filters-form select {
+  padding: 6px;
+  border-radius: 100px;
+  box-shadow: 1px 1px 4px rgb(0,0,0,.4);
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .portfolio-page h2 {
   margin-top: 2em;
