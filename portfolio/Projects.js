@@ -1,5 +1,23 @@
 const Projects = [
 	{
+		"name": "Web App : Livres à lire", 
+		"time": "nov. 2022", 
+		"year": "2022", 
+		"description": `<p>Projet perso de développement d'une web app installable (PWA) pour gérer sa liste personnelle de livres à lire</p><div class="cta-container">
+		<a class="btn btn__main" href="https://theoknoep.github.io/read-books/#/" target="_blank" title="Découvrir le projet en action">Web app Book read</a>
+	</div>`, 
+		"gallery": [
+			{
+				"src": null, 
+				"alt": null
+			}
+		], 
+		"techno": ["PWA", "HTML/CSS", "JavaScript"], 
+		"skills": ["Progressive web app", "Front-end"], 
+		"context": "Projet annexe"
+
+	},
+	{
 		"name" : "Refonte de SiteSecurite.com", 
 		"time" : "mars. 2022", 
 		"year" : "2022", 
@@ -33,7 +51,7 @@ const Projects = [
 		"year": "2021", 
 		"description" : `<div >
 			<p class=description-container__date>Août 2021<p>
-			<strong>Contexte</strong> : L'enjeu du porjet était de rendre accessible le contenu en accès gratuit de Site-Sécurité, y compris en mode hors-ligne, pour concurrencer les applications natives Android et iOS sur le même sujet
+			<strong>Contexte</strong> : L'enjeu du projet était de rendre accessible le contenu en accès gratuit de Site-Sécurité, y compris en mode hors-ligne, pour concurrencer les applications natives Android et iOS sur le même sujet
 			<p><strong>Actions</strong> :
 				<ul>
 					<li>Conception de l'UX de l'application et des différentes actions utilisateur (mécanisme d'installation, téléchargement des contenus, rédaction de la page d'aide, etc.)</li>
