@@ -1,0 +1,134 @@
+[
+	{
+		"name" : "Refonte de SiteSecurite.com", 
+		"time" : "mars. 2022", 
+		"year" : "2022", 
+		"description" : "<div >\r\n\t\t\t\t<p class=description-container__date>Mars 2022<p>\r\n\t\t\t\t<strong>Contexte<\/strong> : Le site principal de la soci\u00E9t\u00E9 France-S\u00E9lection propose l'int\u00E9gralit\u00E9 de la r\u00E9glementation incendie en acc\u00E8s num\u00E9rique, avec certains contenus en acc\u00E8s payant. Compos\u00E9 de diff\u00E9rentes couches technologiques qui s'accumulent depuis une vingtaine d'ann\u00E9e, l'enjeu \u00E9tait de remettre \u00E0 plat l'organisation des contenus du site, d'en faciliter la navigation, et de proposer un nouveau design. \r\n\t\t\t\t<p><strong>Actions<\/strong> :\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li>Suivi et gestion de projet en collaboration avec les autres parties prenantes de l'entreprise pendant 6 mois<\/li>\r\n\t\t\t\t\t<li>Propositions de maquettes pour raffra\u00EEchir l'apparence graphique du site<\/li>\r\n\t\t\t\t\t<li>Modernisation des technologies employ\u00E9es remplacement de frameworks obsol\u00E8tes par des techno modernes<\/li>\r\n\t\t\t\t\t<li>R\u00E9alisation et int\u00E9gration de la landing page de pr\u00E9sentation de la nouvelle version du site aux clients<\/li>\r\n\t\t\t\t<\/ul>\r\n\t\t\t\t<div class=cta-container>\r\n\t\t\t\t\t<a class=\"btn btn__main\" href=\"https:\/\/sitesecurite.com\/\" target=_blank title=\"D\u00E9couvrir le projet en action\">Site en ligne<\/a>\r\n\t\t\t\t<\/div>\r\n\t\t\t<\/div>", 
+		"gallery" : [
+			{
+				"src" : "./img/screenshot-sitesecurite.jpg", 
+				"alt" : null
+			}
+		], 
+		"techno" : ["HTML/CSS", "PHP"], 
+		"skills" : ["Intégration", "Direction artistique", "Graphisme"], 
+		"context" : "France-Sélection"
+	},
+	{
+		"name" : "Web application installable et hors-ligne", 
+		"time" : "Août 2021", 
+		"year": "2021", 
+		"description" : "<div >\r\n\t\t\t<p class=description-container__date>Ao\u00FBt 2021<p>\r\n\t\t\t<strong>Contexte<\/strong> : L'enjeu du projet \u00E9tait de rendre accessible le contenu en acc\u00E8s gratuit de Site-S\u00E9curit\u00E9, y compris en mode hors-ligne, pour concurrencer les applications natives Android et iOS sur le m\u00EAme sujet\r\n\t\t\t<p><strong>Actions<\/strong> :\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li>Conception de l'UX de l'application et des diff\u00E9rentes actions utilisateur (m\u00E9canisme d'installation, t\u00E9l\u00E9chargement des contenus, r\u00E9daction de la page d'aide, etc.)<\/li>\r\n\t\t\t\t\t<li>D\u00E9veloppement d'une progressive web app en utilisant les derni\u00E8res possibilit\u00E9s permises par cet ensemble de technologies : l'installabilit\u00E9, la gestion du cache pour permettre la consultation en mode hors-ligne, la mise \u00E0 jour des contenus, etc.<\/li>\r\n\t\t\t\t<\/ul>\r\n\t\t\t\t<div class=cta-container>\r\n\t\t\t\t\t<a class=\"btn btn__main\" href=\"https:\/\/www.sitesecurite.com\/applicationfs.php\" target=_blank title=\"D\u00E9couvrir le projet en action\">Installation de la PWA<\/a>\r\n\t\t\t\t<\/div>\r\n\t\t\t<\/div>", 
+		"gallery" : [
+			{ "src" : "./img/screenshot-pwa.png"}
+		], 
+		"techno" : ["PWA", "HTML/CSS"], 
+		"skills" : ["Intégration", "Progressive web app"], 
+		"context" : "France-Sélection"
+	},
+	{
+		"name" : "Intégration de maquettes et Animations CSS", 
+		"time" : "sept. 2020", 
+		"year" : "2020", 
+		"description" : "<div ><p class=description-container__date>Septembre 2020<p><strong>Contexte<\/strong> : r\u00E9aliser le prototype HTML\/CSS de maquettes graphiques pour un site de r\u00E9servation de menu en ligne (2 pages)<p><strong>Actions<\/strong> :<ul><li>D\u00E9coupage et int\u00E9gration de maquette<li>Utilisation des media queries pour l'adaptation \u00E0 tous les devices<li>Animations et transitions <strong>CSS3<\/strong> <i aria-hidden=true class=\"fa-css3-alt fab\"><\/i><li>Optimisation du CSS avec SASS<\/ul><div class=cta-container><a class=\"btn btn__main\"href=https:\/\/theoknoep.github.io\/TheoKnoepflin_3_31082020\/ target=_blank title=\"D\u00E9couvrir le projet en action\">D\u00E9mo<\/a> <a class=\"btn btn__secondary\"href=https:\/\/github.com\/TheoKnoep\/TheoKnoepflin_3_31082020 target=_blank title=\"Le code-source sur Github\">Code<\/a><\/div><\/div>", 
+		"gallery" : [
+			{
+				"src" : "./img/screenshot-P3-ohmyfood-1.jpg", 
+				"alt" : "capture d'écran du site démo"
+			}
+		], 
+		"techno" : ["HTML/CSS", "Animations CSS"], 
+		"skills" : ["Intégration", "Animations CSS"], 
+		"context" : "Parcours OpenClassrooms"
+	}, 
+	{
+		"name" : "Optimisations d'un site existant", 
+		"time" : "sept. 2020", 
+		"year" : "2020", 
+		"description" : "<div ><p class=description-container__date>Septembre 2020<p><strong>Contexte<\/strong> : \u00C0 partir du <a href=https:\/\/theoknoep.github.io\/TheoKnoepflin_4_10092020-old\/ target=_blank title=\"Visualisez l'\u00E9tat du site avant optimisations\">code-source du site initial<\/a>, optimiser un site existant en termes de SEO et d'accessibilit\u00E9 en respectant le contexte technique d'origine et les bonnes pratiques de d\u00E9veloppement web (<strong>W3C<\/strong>, <strong>WCAG<\/strong>).<p><strong>Actions<\/strong> :<ul><li>R\u00E9alisation d'une <a href=.\/ressources\/P4_01_analyse.pdf target=_blank>analyse \u00E0 partir des outils d'audit de site web<\/a> (Lighthouse, GTmetrix, Wave) et des bonnes pratiques de d\u00E9veloppement<li>\u00C9laboration d'un plan d'action d'optimisations<li>Impl\u00E9mentation d'optimisations SEO et d'accessibilit\u00E9 dans le code<li>R\u00E9daction d'un <a href=.\/ressources\/P4_3_rapport-optimisations.pdf target=_blank>rapport d'optimisation document\u00E9<\/a><\/ul><div class=cta-container><a href=https:\/\/theoknoep.github.io\/TheoKnoepflin_4_10092020-new\/index.html target=_blank title=\"D\u00E9couvrir le projet en action\"class=\"btn btn__main\">D\u00E9mo<\/a> <a href=https:\/\/github.com\/TheoKnoep\/TheoKnoepflin_4_10092020-new target=_blank title=\"Le code-source sur Github\"class=\"btn btn__secondary\">Code<\/a><\/div><\/div>", 
+		"gallery" : [
+			{
+				"src" : "./img/screenshot-P4-la-chouette-agence_cropped.jpg", 
+				"alt" : "capture d'écran du site démo"
+			}
+		], 
+		"techno" : ["HTML/CSS"], 
+		"skills" : ["SEO", "Audit de site"],
+		"context" : "Parcours OpenClassrooms"
+	},
+	{
+		"name" : "Réalisation d'un site e-commerce", 
+		"time" : "octobre 2020", 
+		"year" : "2020", 
+		"description" : "<div ><p class=description-container__date>Octobre 2020<p><strong>Contexte<\/strong> : r\u00E9alisation d'un petit site e-commerce en JavaScript.<p><strong>Actions<\/strong> :<ul><li>R\u00E9cup\u00E9ration et affichage des informations produits via une API REST<li>Gestion du panier d'achat dans le local storage<li>Validation des donn\u00E9es dans le formulaire de validation de commande<\/ul><div class=cta-container><a class=\"btn btn__secondary\"href=https:\/\/github.com\/TheoKnoep\/TheoKnoepflin_5_28102020 target=_blank title=\"Le code-source sur Github\">Code<\/a><\/div><\/div>", 
+		"gallery" : [
+			{
+				"src" : "./img/screenshot-P5-cart.jpg", 
+				"alt" : "capture d'écran du site démo"
+			}
+		], 
+		"techno" : ["JavaScript", "HTML/CSS"], 
+		"skills" : ["Front-end"], 
+		"context" : "Parcours OpenClassrooms"
+	}, 
+	{
+		"name" : "Création d'une API REST", 
+		"time" : "décembre 2020", 
+		"year" : "2020", 
+		"description" : "<div ><p class=description-container__date>D\u00E9cembre 2020<p><strong>Contexte<\/strong> : \u00E0 partir du front d'une application web de notation du go\u00FBt de sauces piquantes, cr\u00E9ation de l'API REST c\u00F4t\u00E9 serveur avec Node + Express pour traiter les requ\u00EAtes fetch et la base de donn\u00E9e MongoDB du projet.<p><strong>Actions<\/strong> :<ul><li>Cr\u00E9ation d'un serveur Node.js avec Express<li>Impl\u00E9mentation des routes CRUD<li>Stockage des donn\u00E9es dans MongoDB Atlas (solution cloud)<li>Mise en pratique des bonnes pratiques de s\u00E9curit\u00E9 (recommandations OWASP)<\/ul><div class=cta-container><a class=\"btn btn__secondary\"href=https:\/\/github.com\/TheoKnoep\/TheoKnoepflin_6_20112020 target=_blank title=\"Le code-source sur Github\">Code<\/a><\/div><\/div>", 
+		"gallery" : [
+			{
+				"src" : "./img/rest-api-ico.png", 
+				"alt" : "capture d'écran du site démo"
+			}
+		], 
+		"techno" : ["NodeJS+Express"], 
+		"skills" : ["Back-end"], 
+		"context" : "Parcours OpenClassrooms"
+	}, 
+	{
+		"name" : "Création d'un réseau social", 
+		"time" : "janvier 2021", 
+		"year" : "2021", 
+		"description" : "<div ><p class=description-container__date>Janvier 2021<p><strong>Contexte<\/strong> : construction from scratch d'une application de type 9GAG avec comme fonctionnalit\u00E9s : cr\u00E9er et g\u00E9rer son compte utilisateur, poster des articles et des medias, et consulter les publications des autres utilisateurs dans un fil d'actualit\u00E9.<p><strong>Actions<\/strong> :<ul><li>Cr\u00E9ation du frontend de l'application avec le framework VueJS<li>Cr\u00E9ation de l'API avec Node.js + Express<li>Stockage des donn\u00E9es avec MySQL<li>Gestion des sessions utilisateurs avec Json Web Token<\/ul><div class=cta-container><a class=\"btn btn__secondary\"href=https:\/\/github.com\/TheoKnoep\/TheoKnoepflin_7_16122020 target=_blank title=\"Le code-source sur Github\">Code<\/a><\/div><\/div>", 
+		"gallery" : [
+			{
+				"src" : "./img/screenshot-P7-publications-feed-cropped.jpg", 
+				"alt" : "capture d'écran du site démo"
+			}
+		], 
+		"techno" : ["NodeJS+Express", "VueJS"], 
+		"skills" : ["Front-end", "Back-end"], 
+		"context" : "Parcours OpenClassrooms"
+	}, 
+	{
+		"name" : "Site vitrine MaxPetit.fr", 
+		"time" : "février 2021", 
+		"year" : "2021", 
+		"description" : "<div ><p class=description-container__date>F\u00E9vrier 2021<p><strong>Contexte<\/strong> : Max Petit est un fournisseur de fournitures industrielles qui souhaite d\u00E9velopper sa pr\u00E9sence en ligne.<br>Ils ont besoin d'un site l\u00E9ger qui puisse pr\u00E9senter la soci\u00E9t\u00E9, son identit\u00E9, et les principaux produits qu'ils peuvent fournir \u00E0 leurs clients.<p><strong>Actions<\/strong> :<ul><li>Gestion de projet de la cr\u00E9ation du site (d\u00E9finitions du cahier des charges en lien avec la responsable communication de la soci\u00E9t\u00E9, planification, accompagnement client)<li>Cr\u00E9ation de style tiles pour d\u00E9finir une orientation graphique<li>Cr\u00E9ation des maquettes graphiques du site<li>Int\u00E9gration HTML5 et CSS3 des pages statiques du site<\/ul><div class=cta-container><a class=\"btn btn__secondary\"href=.\/ressources\/demo-maquettes-maxpetit.html target=_blank title=\"D\u00E9couvrir le site de d\u00E9mo\">Maquettes graphiques<\/a> <a class=\"btn btn__main\"href=https:\/\/ww2.fournitures-maxpetit.fr\/nos-produits.html target=_blank title=\"D\u00E9couvrir le site de d\u00E9mo\">Version finale du site<\/a><\/div><\/div>", 
+		"gallery" : [
+			{
+				"src" : "./img/Maquette-categorie-template.jpg", 
+				"alt" : "Maquette du site Max Petit"
+			}
+		], 
+		"techno" : ["HTML/CSS", "SASS"], 
+		"skills" : ["Intégration", "Direction artistique", "Graphisme", "Maquettes", "Gestion de projet"], 
+		"context" : "Projet annexe"
+	},
+	{
+		"name" : "Rebranding et réalisation de plaquette Mille et Une Huiles", 
+		"time" : "mai 2019", 
+		"year" : "2019", 
+		"description" : "<div ><p class=description-container__date>Mai 2019<p><strong>Contexte<\/strong> : Mille et Une Huiles est une marque de produits d'\u00E9picerie fine.<br>\u2192 Pour \u00E9tendre sa s\u00E9lection aux produits sucr\u00E9s, l'entreprise a lanc\u00E9 une nouvelle marque \u201CLes Ateliers M\u201D.<br>\u2192 L'enjeu \u00E9tait alors de d\u00E9finir une nouvelle identit\u00E9 graphique qui lie les 2 marques tout en explicitant ses deux positionnements sal\u00E9s\/sucr\u00E9s pour \u00EAtre compris des anciens clients commme des nouveaux.<p><strong>Actions<\/strong> :<ul><li>R\u00E9flexion graphique pour d\u00E9finir les \u00E9l\u00E9ments d'identit\u00E9 de la nouvelle marque<li>Lier les deux marques dans un concept unique<li>R\u00E9aliser la maquette de la nouvelle plaquette d'entreprise avec InDesign<li>Assurer la relation avec l'imprimeur pour la fabrication<\/ul><div class=cta-container><a class=\"btn btn__main\"href=.\/ressources\/Plaquette-1001huiles-AteliersM.pdf target=_blank title=\"D\u00E9couvrir le r\u00E9sultat final\">Voir la plaquette<\/a><\/div><\/div>", 
+		"gallery" : [
+			{
+				"src" : "./img/plaquette1001h-new.png", 
+				"alt" : "La nouvelle plaquette de Mille et Une Huiles"
+			}
+		], 
+		"techno" : ["InDesign", "Illustrator"], 
+		"skills" : ["Graphisme", "Direction artistique", "Mise en page"], 
+		"context" : "1001 Huiles"
+	}
+]

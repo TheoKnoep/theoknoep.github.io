@@ -123,7 +123,7 @@ function displayProjects(arrayOfProjects) {
 		allProjectsInHTML += template; 
 	}
 
-	console.log(allProjectsInHTML); 
+	// console.log(allProjectsInHTML); 
 	document.querySelector('#projects-container').innerHTML = allProjectsInHTML.length > 0 ? allProjectsInHTML : `<p>Aucun projet ne correspond à vos critères de recherche<br/><button onclick="resetFilters()">Réinitaliser les filters ?</button></p>`; 
 }
 
