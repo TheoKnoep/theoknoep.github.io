@@ -54,7 +54,7 @@
 <body class="portfolio-page">
 	<header class="special-header">
 		<h1 class="page-heading">Portfolio</h1>
-		<a href="../index.html" class="backward-link"><span>←<br />Retour au CV</span></a>
+		<a href="../" class="backward-link"><span>←<br />Retour au CV</span></a>
 	</header>
 
 	<main class="page">
@@ -110,7 +110,38 @@
 
 	<script src="Projects.js"></script>
 	<script src="portfolio.js"></script>
+<<<<<<< Updated upstream
 	<script>
+=======
+
+	<script>
+		let filtered = Projects.filter(item => {
+			return (item.year === "2022" || item.year === "2021") &&
+				(item.context === 'Projet annexe' || item.context === 'France-Sélection') && 
+				(item.techno.indexOf('PWA') >= 0); 
+		}); 
+		// console.log(filtered); 
+
+
+		function filterProjects(options = {year: "2022,2021", techno: 'PWA,PHP'}) {
+			let filtered = Projects; 
+
+			if (options.year) {
+				console.log(options.year.split(',').length); 
+				options.year.split(',').forEach(year => {
+					output = output.filter(item => {
+						return item.year === year; 
+					})
+				})
+
+			}
+
+			console.log(filtered); 
+		}
+
+		filterProjects(); 
+
+>>>>>>> Stashed changes
 		
 	</script>
 </body>
